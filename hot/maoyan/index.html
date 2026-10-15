@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 防闪白：必须在 CSS 之前 -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('qx-theme');
+      if (saved) {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<title>猫眼票房 · iTboy</title>
+<meta name="description" content="影史票房总榜">
+<meta name="theme-color" content="#0a0d12">
+
+<style>
+  :root { --accent: #d4a017; }
+</style>
+<link rel="stylesheet" href="/assets/base.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "猫眼票房",
+  "description": "影史票房总榜",
+  "url": "https://www.itboy.top/hot/maoyan/",
+  "inLanguage": "zh-CN",
+  "numberOfItems": 20,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "阿凡达"
+    },    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "复仇者联盟 4：终局之战"
+    },    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "阿凡达：水之道"
+    },    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "哪吒之魔童闹海"
+    },    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "泰坦尼克号"
+    },    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "星球大战：原力觉醒"
+    },    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "复仇者联盟 3：无限战争"
+    },    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "蜘蛛侠：英雄无归"
+    },    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "头脑特工队 2"
+    },    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "侏罗纪世界"
+    },    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "狮子王"
+    },    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "复仇者联盟"
+    },    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "速度与激情 7"
+    },    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "壮志凌云 2：独行侠"
+    },    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "冰雪奇缘 2"
+    },    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "芭比"
+    },    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "复仇者联盟 2：奥创纪元"
+    },    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "超级马里奥兄弟大电影"
+    },    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "黑豹"
+    },    {
+      "@type": "ListItem",
+      "position": 20,
+      "name": "哈利・波特与死亡圣器（下）"
+    }  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "https://www.itboy.top/"
+    },    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "猫眼票房",
+      "item": "https://www.itboy.top/hot/maoyan/"
+    }  ]
+}
+</script>
+
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ===== 顶栏 ===== -->
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-name">iTboy</span>
+    </a>
+
+    <div class="topbar-right">
+      <a class="back-btn" href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span>返回首页</span>
+      </a>
+
+      <button class="theme-toggle" id="themeToggle"
+              aria-label="切换深浅色主题" title="切换主题">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="hairline"></div>
+
+  <!-- ===== 主体 ===== -->
+  <main>
+
+    <nav class="breadcrumb" aria-label="面包屑导航">
+          <a href="/">首页</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current" aria-current="page">猫眼票房</span>
+    </nav>
+
+
+<div class="page-head">
+  <h1 class="page-title">猫眼票房</h1>
+  <p class="page-desc">影史票房总榜</p>
+  <p class="page-meta">更新于 2026/10/15 19:58:10</p>
+</div>
+
+<p class="page-intro">猫眼全球票房总榜以榜单形式展示影史累计票房排行，包含电影名、上映年份与全球票房金额。数据来自猫眼专业版，包括内地票房与海外市场统计，适合查看电影票房历史成绩与行业参考数据。</p>
+
+
+<div class="rank-list">
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">01</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          阿凡达
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2009
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">212.01亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">02</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          复仇者联盟 4：终局之战
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2019
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">203亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">03</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          阿凡达：水之道
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2022
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">168.25亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">04</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          哪吒之魔童闹海
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2025
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">164.38亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">05</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          泰坦尼克号
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 1997
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">164.23亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">06</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          星球大战：原力觉醒
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2015
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">150.2亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">07</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          复仇者联盟 3：无限战争
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2018
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">148.83亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">08</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          蜘蛛侠：英雄无归
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2021
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">141.6亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">09</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          头脑特工队 2
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2024
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">123.19亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">10</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          侏罗纪世界
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2015
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">121.21亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">11</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          狮子王
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2019
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">120.52亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">12</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          复仇者联盟
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2012
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">110.26亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">13</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          速度与激情 7
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2015
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">109.88亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">14</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          壮志凌云 2：独行侠
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2022
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">108.46亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">15</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          冰雪奇缘 2
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2019
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">105.41亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">16</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          芭比
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2023
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">104.93亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">17</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          复仇者联盟 2：奥创纪元
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2015
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">101.88亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">18</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          超级马里奥兄弟大电影
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2023
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">98.68亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">19</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          黑豹
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2018
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">97.89亿元</span>
+    </span>
+  </a>
+  <a class="rank-item" href="#"
+onclick="return false;"     target="_blank" rel="noopener">
+    <span class="rank-idx">20</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          哈利・波特与死亡圣器（下）
+          <span style="color:var(--text-faint);font-weight:400;">
+            · 2011
+          </span>
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">97.35亿元</span>
+    </span>
+  </a>
+</div>
+
+
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div>© 2026 iTboy · 保留所有权利</div>
+      <div>内容均来自互联网 · 仅供信息浏览参考</div>
+      <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener">iTboy</a></div>
+    </div>
+    <div class="footer-right">
+      <a href="/sitemap.xml">Sitemap</a> ·
+      <a href="/robots.txt">Robots</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('qx-theme', next); } catch (e) {}
+    });
+  })();
+</script>
+
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?edfc3c91ef0069bdd3633cd46538a3d0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

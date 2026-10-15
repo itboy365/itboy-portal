@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 防闪白：必须在 CSS 之前 -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('qx-theme');
+      if (saved) {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<title>头条热搜榜 · iTboy</title>
+<meta name="description" content="今日头条热点">
+<meta name="theme-color" content="#0a0d12">
+
+<style>
+  :root { --accent: #e63946; }
+</style>
+<link rel="stylesheet" href="/assets/base.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "头条热搜榜",
+  "description": "今日头条热点",
+  "url": "https://www.itboy.top/hot/toutiao/",
+  "inLanguage": "zh-CN",
+  "numberOfItems": 50,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "PC为何卖不动了"
+,
+      "url": "https://www.toutiao.com/trending/7696808119610904105"
+    },    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "2027年或成史上最热一年"
+,
+      "url": "https://www.toutiao.com/trending/7695657946173407275"
+    },    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "中国外贸何以“加速跑”"
+,
+      "url": "https://www.toutiao.com/article/7696698584326046248"
+    },    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "车辆从60米高架坠下车主轻伤"
+,
+      "url": "https://www.toutiao.com/trending/7695981761755611174"
+    },    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "张雪评两轮车自动驾驶概念"
+,
+      "url": "https://www.toutiao.com/trending/7696555725698564105"
+    },    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "专家：A股当前位置没必要太恐慌"
+,
+      "url": "https://www.toutiao.com/trending/7696796212871040554"
+    },    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "A股还有机会吗"
+,
+      "url": "https://www.toutiao.com/trending/7696400709286297654"
+    },    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "浙江一医院两员工赴泰旅游期间溺亡"
+,
+      "url": "https://www.toutiao.com/trending/7696828860142194227"
+    },    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "特朗普会牺牲“忠臣”赫格塞斯吗"
+,
+      "url": "https://www.toutiao.com/trending/7696849535011655187"
+    },    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "美防长讲话多次遭打断被喊“战犯”"
+,
+      "url": "https://www.toutiao.com/trending/7696706369529741834"
+    },    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "网传超级工程隧洞“挖偏”？假的"
+,
+      "url": "https://www.toutiao.com/trending/7696846275337276937"
+    },    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "陈小春曾说不会把送走的弟弟找回来"
+,
+      "url": "https://www.toutiao.com/trending/7696782172228685375"
+    },    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "袁咏仪第一次见巩俐被美呆了"
+,
+      "url": "https://www.toutiao.com/trending/7696787034346029065"
+    },    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "多地组织筛查干部档案有何深意"
+,
+      "url": "https://www.toutiao.com/trending/7696389122834910756"
+    },    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "泽连斯基称乌克兰遭美国背叛"
+,
+      "url": "https://www.toutiao.com/trending/7696456047573189130"
+    },    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "厦金大桥（厦门段）建设进展顺利"
+,
+      "url": "https://www.toutiao.com/trending/7696317667183247403"
+    },    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "阿联酋一王室成员在伦敦街头吸毒昏倒"
+,
+      "url": "https://www.toutiao.com/trending/7696516414631329830"
+    },    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "AI越能干我们会越有钱吗"
+,
+      "url": "https://www.toutiao.com/trending/7696830735659060786"
+    },    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "FBI盯上东南亚电诈园区"
+,
+      "url": "https://www.toutiao.com/trending/7696374290991857705"
+    },    {
+      "@type": "ListItem",
+      "position": 20,
+      "name": "13岁男孩身高195cm 全网求长高食谱"
+,
+      "url": "https://www.toutiao.com/trending/7696319809822703666"
+    }  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "https://www.itboy.top/"
+    },    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "头条热搜榜",
+      "item": "https://www.itboy.top/hot/toutiao/"
+    }  ]
+}
+</script>
+
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ===== 顶栏 ===== -->
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-name">iTboy</span>
+    </a>
+
+    <div class="topbar-right">
+      <a class="back-btn" href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span>返回首页</span>
+      </a>
+
+      <button class="theme-toggle" id="themeToggle"
+              aria-label="切换深浅色主题" title="切换主题">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="hairline"></div>
+
+  <!-- ===== 主体 ===== -->
+  <main>
+
+    <nav class="breadcrumb" aria-label="面包屑导航">
+          <a href="/">首页</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current" aria-current="page">头条热搜榜</span>
+    </nav>
+
+
+<div class="page-head">
+  <h1 class="page-title">头条热搜榜</h1>
+  <p class="page-desc">今日头条热点</p>
+  <p class="page-meta">更新于 2026-10-15 19:58</p>
+</div>
+
+<p class="page-intro">头条热搜榜聚合今日头条平台的热门话题，基于用户阅读、互动、分享等行为数据实时排序。内容覆盖社会民生、时政要闻、财经资讯、科技动态等方向，反映下沉市场与大众用户的关注焦点。</p>
+
+
+<div class="rank-list">
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696808119610904105"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">01</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          PC为何卖不动了
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">1618.1万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7695657946173407275"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">02</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          2027年或成史上最热一年
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">1464.1万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/article/7696698584326046248"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">03</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          中国外贸何以“加速跑”
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">1324.8万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7695981761755611174"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">04</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          车辆从60米高架坠下车主轻伤
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">1198.7万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696555725698564105"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">05</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          张雪评两轮车自动驾驶概念
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">1084.6万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696796212871040554"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">06</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          专家：A股当前位置没必要太恐慌
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">981.4万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696400709286297654"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">07</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          A股还有机会吗
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">888万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696828860142194227"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">08</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          浙江一医院两员工赴泰旅游期间溺亡
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">803.5万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696849535011655187"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">09</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          特朗普会牺牲“忠臣”赫格塞斯吗
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">727万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696706369529741834"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">10</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          美防长讲话多次遭打断被喊“战犯”
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">657.9万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696846275337276937"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">11</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          网传超级工程隧洞“挖偏”？假的
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">595.3万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696782172228685375"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">12</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          陈小春曾说不会把送走的弟弟找回来
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">538.6万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696787034346029065"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">13</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          袁咏仪第一次见巩俐被美呆了
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">487.4万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696389122834910756"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">14</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          多地组织筛查干部档案有何深意
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">441万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696456047573189130"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">15</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          泽连斯基称乌克兰遭美国背叛
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">399万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696317667183247403"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">16</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          厦金大桥（厦门段）建设进展顺利
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">361万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696516414631329830"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">17</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          阿联酋一王室成员在伦敦街头吸毒昏倒
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">326.7万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696830735659060786"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">18</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          AI越能干我们会越有钱吗
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">295.6万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696374290991857705"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">19</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          FBI盯上东南亚电诈园区
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">267.5万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696319809822703666"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">20</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          13岁男孩身高195cm 全网求长高食谱
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">242万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696782172228734527"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">21</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          李嘉诚暂不打算公开露面回应传闻
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">219万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696108233798352934"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">22</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          高原否认插足王菲窦唯婚姻
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">198.1万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7695977982833360905"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">23</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          胡塞称导弹命中沙特哈立德国王机场
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">179.3万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696736574441291795"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">24</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          长实否认李嘉诚去世
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">162.2万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696799026380963876"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">25</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          俄在俄日争议岛屿举行轰炸演习
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">146.8万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696809045528677951"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">26</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          黄金牛市何时终结
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">132.8万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696793652521517106"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">27</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          韩国就股市召开紧急会议
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">120.2万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696713356131992074"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">28</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          美宣称第四支特遣队随时准备对抗中国
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">108.7万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696756700104359990"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">29</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          袁咏仪说吴镇宇老婆嫁他救了整个世界
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">98.4万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696807821739822655"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">30</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          德国为何推动欧盟限制中国商品
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">89万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696795292674441755"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">31</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          日本公明党干事长：日不支持“台独”
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">80.6万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696383717895585835"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">32</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          菲舰载直升机侵入黄岩岛领空被驱离
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">72.9万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696709987644476938"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">33</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          中朝新鸭绿江大桥正式开通
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">66万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696545977833885227"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">34</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          长鑫科技吓坏美韩存储巨头
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">59.7万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696819113469722678"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">35</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          失眠不只是“睡不着”
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">54万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696811453076619300"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">36</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          二手车商：新车降价压低二手油车价格
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">48.9万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696770355335007787"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">37</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          福州市委书记市长登上海军福州舰
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">44.2万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7695965043868205099"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">38</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          马宁总结沙特执法之旅：波折而又惊险
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">40万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696673179963785270"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">39</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          日本被指秘密研发射程超1000公里导弹
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">36.2万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696810601703558706"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">40</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          韩股遭遇“黑色星期四”
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">32.8万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696818068026035750"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">41</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          欧盟为何拒绝特朗普推动俄乌停战提议
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">29.6万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696769445598904330"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">42</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          证监会稳市逻辑浮现三条线索
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">26.8万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7695918579321339958"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">43</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          杜塞尔多夫队友对樊振东全肯定
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">24.3万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696470377811443738"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">44</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          媒体：AI越强越要守住年轻人职业起点
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">22万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696442826960257033"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">45</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          商家建议手头电脑能用则用
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">19.9万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696810756046635027"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">46</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          乌称打击俄军机场摧毁6架苏-34M战机
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">18万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7695719740572172324"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">47</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          杜锋杨鸣将一起解说CBA新赛季揭幕战
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">16.3万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696703943902003236"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">48</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          乔任梁父亲保留着儿子送的第一辆车
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">14.7万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696407595302010916"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">49</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          APEC盛会临近 深圳龙华全城焕新
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">13.3万</span>
+    </span>
+  </a>
+  <a class="rank-item" href="https://www.toutiao.com/trending/7696806298515718706"
+     target="_blank" rel="noopener">
+    <span class="rank-idx">50</span>
+
+    <span class="rank-body">
+      <span class="rank-title">
+          外交部：日当政者应正视历史
+      </span>
+
+    </span>
+
+    <span class="rank-right">
+        <span class="rank-hot">12万</span>
+    </span>
+  </a>
+</div>
+
+
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div>© 2026 iTboy · 保留所有权利</div>
+      <div>内容均来自互联网 · 仅供信息浏览参考</div>
+      <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener">iTboy</a></div>
+    </div>
+    <div class="footer-right">
+      <a href="/sitemap.xml">Sitemap</a> ·
+      <a href="/robots.txt">Robots</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('qx-theme', next); } catch (e) {}
+    });
+  })();
+</script>
+
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?edfc3c91ef0069bdd3633cd46538a3d0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
