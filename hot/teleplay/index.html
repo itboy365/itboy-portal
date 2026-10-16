@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 防闪白：必须在 CSS 之前 -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('qx-theme');
+      if (saved) {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<title>热播电视剧榜 · iTboy</title>
+<meta name="description" content="当下最火的电视剧">
+<meta name="theme-color" content="#0a0d12">
+
+<style>
+  :root { --accent: #7c5cff; }
+</style>
+<link rel="stylesheet" href="/assets/base.css">
+
+<script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "热播电视剧榜",
+  "description": "当下最火的电视剧",
+  "url": "https://www.itboy.top/hot/teleplay/",
+  "inLanguage": "zh-CN",
+  "numberOfItems": 10,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "九门"
+,
+      "url": "https://baike.baidu.com/item/%E4%B9%9D%E9%97%A8/64883150?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "非份之罪"
+,
+      "url": "https://baike.baidu.com/item/%E9%9D%9E%E4%BB%BD%E4%B9%8B%E7%BD%AA/63762065?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "这一秒过火"
+,
+      "url": "https://baike.baidu.com/item/%E8%BF%99%E4%B8%80%E7%A7%92%E8%BF%87%E7%81%AB/65762063?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "百花杀"
+,
+      "url": "https://baike.baidu.com/item/%E7%99%BE%E8%8A%B1%E6%9D%80/65495865?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "天才，女友"
+,
+      "url": "https://baike.baidu.com/item/%E5%A4%A9%E6%89%8D%EF%BC%8C%E5%A5%B3%E5%8F%8B/67903610?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "御廷谣"
+,
+      "url": "https://baike.baidu.com/item/%E5%BE%A1%E5%BB%B7%E8%B0%A3/64971706?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "小芳"
+,
+      "url": "https://baike.baidu.com/item/%E5%B0%8F%E8%8A%B3/68177670?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "雀骨"
+,
+      "url": "https://baike.baidu.com/item/%E9%9B%80%E9%AA%A8/65443922?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "悬案"
+,
+      "url": "https://baike.baidu.com/item/%E6%82%AC%E6%A1%88/63715018?fr=resou"
+    },    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "人鱼"
+,
+      "url": "https://baike.baidu.com/item/%E4%BA%BA%E9%B1%BC/59177126?fr=resou"
+    }  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "https://www.itboy.top/"
+    },    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "热播电视剧榜",
+      "item": "https://www.itboy.top/hot/teleplay/"
+    }  ]
+}
+</script>
+
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ===== 顶栏 ===== -->
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-name">iTboy</span>
+    </a>
+
+    <div class="topbar-right">
+      <a class="back-btn" href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span>返回首页</span>
+      </a>
+
+      <button class="theme-toggle" id="themeToggle"
+              aria-label="切换深浅色主题" title="切换主题">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="hairline"></div>
+
+  <!-- ===== 主体 ===== -->
+  <main>
+
+    <nav class="breadcrumb" aria-label="面包屑导航">
+          <a href="/">首页</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current" aria-current="page">热播电视剧榜</span>
+    </nav>
+
+
+<div class="page-head">
+    <h1 class="page-title">热播电视剧榜</h1>
+    <p class="page-desc">当下最火的电视剧</p>
+    <p class="page-meta">更新于 2026-10-16 18:47</p>
+</div>
+
+<p class="page-intro">百度电视剧榜实时反映当下热播剧集的网络热度，综合播放量、搜索指数、讨论量等维度排序。榜单覆盖国产剧、港台剧、欧美剧与日韩剧，包含剧名、剧情简介、主演信息与实时热度值。数据来自百度搜索与视频平台的公开统计，适合追剧用户快速了解当前最受关注的电视剧作品。</p>
+
+
+<div class="rank-list">
+    <a class="rank-item" href="https://baike.baidu.com/item/%E4%B9%9D%E9%97%A8/64883150?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">01</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001211803186.jpg" alt="九门" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        九门
+        </span>
+
+        <span class="rank-desc">讲述了民国长沙，张启山携手吴老狗、霍仙姑追查部队集体失踪谜案，众人深入机关密布的隔世楼古墓，一边破解地下秘境重重危机，一边周旋各方势力，揭开埋藏多年的家族秘辛与家国阴谋的冒险故事</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">95471</span>
+        <br><span style="font-size:11px;">9.55w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E9%9D%9E%E4%BB%BD%E4%B9%8B%E7%BD%AA/63762065?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">02</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001351723838.jpg" alt="非份之罪" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        非份之罪
+        </span>
+
+        <span class="rank-desc">讲述重案组探员孟保接连侦破六桩离奇罪案，每起案件皆源于人心失控的贪欲，在一桩桩人性迷局之中拨开层层迷雾，挖掘欲望裹挟之下，普通人一步步走向犯罪深渊的真相故事。</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">93247</span>
+        <br><span style="font-size:11px;">9.32w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E8%BF%99%E4%B8%80%E7%A7%92%E8%BF%87%E7%81%AB/65762063?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">03</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001445696503.jpg" alt="这一秒过火" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        这一秒过火
+        </span>
+
+        <span class="rank-desc">讲述了民国乱世中，慕容清峄与任素素因一场相救结下命运牵绊，经历身世错位、家族恩怨和痛心离别；三年后任素素以“方牧兰”之名回归，成为慕容清峄的准大嫂，两人在爱恨纠葛中并肩踏入危局，共赴复仇的故事。</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">89745</span>
+        <br><span style="font-size:11px;">8.97w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E7%99%BE%E8%8A%B1%E6%9D%80/65495865?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">04</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001769695180.jpg" alt="百花杀" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        百花杀
+        </span>
+
+        <span class="rank-desc">讲述了身负家族灭门血海深仇的沈汐和，凭借一身调香绝技步步谋划，与隐忍蛰伏的太子萧华雍从互相算计的利益盟友，蜕变为生死与共的知己，二人携手拨开朝堂重重阴谋，清算陈年冤案，在权力纷争中并肩守护家国天下的故事。</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">81473</span>
+        <br><span style="font-size:11px;">8.15w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E5%A4%A9%E6%89%8D%EF%BC%8C%E5%A5%B3%E5%8F%8B/67903610?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">05</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001875789073.jpg" alt="天才，女友" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        天才，女友
+        </span>
+
+        <span class="rank-desc">讲述了天才少女林知夏携手学霸竹马江逾白从校园到婚纱的披荆斩棘之路。林知夏被保送复旦后，江逾白准备在毕业之旅对她告白，却因母亲卷入诈骗案而遗憾离开。</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">74981</span>
+        <br><span style="font-size:11px;">7.5w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E5%BE%A1%E5%BB%B7%E8%B0%A3/64971706?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">06</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002032153290.jpg" alt="御廷谣" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        御廷谣
+        </span>
+
+        <span class="rank-desc">讲述孤女孟廷辉幼年蒙难，以女子之身三元及第踏入朝堂，她与少年帝王英寡彼此相知，二人联手对抗朝堂权臣、粉碎谋反阴谋，在权力博弈与爱恨拉扯之中，冲破身份桎梏，携手整肃朝纲守护万民安宁的故事</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">73425</span>
+        <br><span style="font-size:11px;">7.34w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E5%B0%8F%E8%8A%B3/68177670?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">07</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002114265165.jpg" alt="小芳" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        小芳
+        </span>
+
+        <span class="rank-desc">讲述乡村女孩杨小芳与祁小伟相恋意外怀孕，两家人因旧怨彩礼矛盾婚事破裂，面对世俗流言与亲友劝和，小芳拒绝将就成婚，选择独自孕育孩子，扎根家乡创业，挣脱传统偏见活出独立自我的成长故事。</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">65786</span>
+        <br><span style="font-size:11px;">6.58w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E9%9B%80%E9%AA%A8/65443922?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">08</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002212836252.jpg" alt="雀骨" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        雀骨
+        </span>
+
+        <span class="rank-desc">讲述身负边关冤案的靖安王世子萧无衣，为复仇布局迎娶精通墨家机关术的太傅之女谢嘉鱼，二人始于契约婚姻，彼此戒备试探，在危机四伏的朝堂争斗里渐生情愫，携手揭开尘封旧案，洗清冤屈并肩守护家国的故事。</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">56437</span>
+        <br><span style="font-size:11px;">5.64w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E6%82%AC%E6%A1%88/63715018?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">09</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002339317627.jpg" alt="悬案" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        悬案
+        </span>
+
+        <span class="rank-desc">讲述九十年代刑侦技术落后的背景下，老刑警施占军与调查记者白朗，面对两起尘封多年的重大积案，靠着走访摸排、深挖卷宗，跨越二十二年坚持不懈追凶，冲破重重阻碍，最终让沉冤真相得以昭雪的故事。</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">45326</span>
+        <br><span style="font-size:11px;">4.53w</span>
+        </span>
+    </a>
+    <a class="rank-item" href="https://baike.baidu.com/item/%E4%BA%BA%E9%B1%BC/59177126?fr=resou"         target="_blank" rel="noopener">
+        <span class="rank-idx">10</span>
+
+        <span class="rank-cover">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002408174735.jpg" alt="人鱼" loading="lazy">
+    </span>
+
+        <span class="rank-body">
+      <span class="rank-title">
+        人鱼
+        </span>
+
+        <span class="rank-desc">讲述九十年代小城少女苏琳长期遭受原生家庭忽视与校园霸凌，冲突意外坠入地下暗渠离奇失踪，她于绝境之中顽强求生，意外撞破地下河道连环女尸案的线索，历经磨难挣脱命运枷锁，凭借自身力量完成自我救赎的故事。</span>
+        </span>
+
+        <span class="rank-right">
+        <span class="rank-hot">43241</span>
+        <br><span style="font-size:11px;">4.32w</span>
+        </span>
+    </a>
+</div>
+
+
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div>© 2026 iTboy · 保留所有权利</div>
+      <div>内容均来自互联网 · 仅供信息浏览参考</div>
+      <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener">iTboy</a></div>
+    </div>
+    <div class="footer-right">
+      <a href="/sitemap.xml">Sitemap</a> ·
+      <a href="/robots.txt">Robots</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('qx-theme', next); } catch (e) {}
+    });
+  })();
+</script>
+
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?edfc3c91ef0069bdd3633cd46538a3d0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="/assets/base.css">
 
 <script type="application/ld+json">
-{
+    {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "iTboy",
@@ -81,282 +81,352 @@
 
 
 <style>
-/* ============================================================
+    /* ============================================================
    首页专用样式
    ============================================================ */
 
-/* ---------- 顶部信息区 ---------- */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  min-height: 84px;
-}
-.hero-left { min-width: 0; }
+    /* ---------- 顶部信息区 ---------- */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        min-height: 84px;
+    }
 
-.date-line {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.date-main {
-  font-size: 21px;
-  font-weight: 650;
-  letter-spacing: .2px;
-}
-.date-week {
-  font-size: 13px;
-  color: var(--text-dim);
-  padding: 1px 8px;
-  border: 1px solid var(--card-border);
-  border-radius: 999px;
-}
-.lunar-line {
-  margin-top: 4px;
-  font-size: 13px;
-  color: var(--text-dim);
-  letter-spacing: .3px;
-}
+    .hero-left {
+        min-width: 0;
+    }
 
-.hero-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
+    .date-line {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 
-/* ---------- 状态卡（摸鱼 + 金价） ---------- */
-.stat {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  min-width: 152px;
-  min-height: 72px;
-  padding: 9px 12px;
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  background: var(--card-bg);
-}
-.stat-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-}
-.stat-k { font-size: 12px; color: var(--text-dim); }
-.stat-v {
-  font-size: 16px;
-  font-weight: 650;
-  color: var(--accent);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: .3px;
-}
-.stat-unit {
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--text-dim);
-  letter-spacing: 0;
-  margin-left: 2px;
-}
-.stat-bar {
-  height: 3px;
-  border-radius: 999px;
-  background: var(--bar-track);
-  overflow: hidden;
-}
-.stat-bar i {
-  display: block;
-  height: 100%;
-  border-radius: 999px;
-  background: var(--accent);
-  opacity: .85;
-}
-.stat-sub {
-  font-size: 11px;
-  color: var(--text-faint);
-  letter-spacing: .2px;
-}
+    .date-main {
+        font-size: 21px;
+        font-weight: 650;
+        letter-spacing: .2px;
+    }
 
-/* ---------- 分组 ---------- */
-.group + .group { margin-top: 36px; }
-.group-title {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: var(--text-dim);
-  margin-bottom: 14px;
-}
-.group-title::before {
-  content: "";
-  width: 3px;
-  height: 13px;
-  border-radius: 2px;
-  background: var(--accent);
-  opacity: .8;
-}
-.group-title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--hairline);
-}
+    .date-week {
+        font-size: 13px;
+        color: var(--text-dim);
+        padding: 1px 8px;
+        border: 1px solid var(--card-border);
+        border-radius: 999px;
+    }
 
-/* ---------- 每日60s 新闻列表 ---------- */
-.news-list {
-  border-top: 1px solid var(--hairline);
-}
-.news-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 10px 6px;
-  border-bottom: 1px solid var(--hairline);
-  font-size: 13.5px;
-  line-height: 1.75;
-  transition: background-color .15s, padding-left .15s;
-}
-.news-item:hover {
-  background: var(--accent-soft);
-  padding-left: 12px;
-}
-.news-idx {
-  flex-shrink: 0;
-  width: 24px;
-  padding-top: 1px;
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: .5px;
-  opacity: .55;
-}
-.news-text { color: var(--text); min-width: 0; }
-.news-meta {
-  margin-top: 12px;
-  font-size: 11.5px;
-  color: var(--text-faint);
-  text-align: right;
-  letter-spacing: .3px;
-}
+    .lunar-line {
+        margin-top: 4px;
+        font-size: 13px;
+        color: var(--text-dim);
+        letter-spacing: .3px;
+    }
 
-/* ---------- 卡片网格 ---------- */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 12px;
-}
-.card {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  min-height: 74px;
-  padding: 13px 14px;
-  border: 1px solid var(--card-border);
-  border-radius: 12px;
-  background: var(--card-bg);
-  text-decoration: none;
-  color: inherit;
-  transition: transform .2s, border-color .2s,
-              background-color .2s, box-shadow .2s;
-}
-.card:hover {
-  transform: translateY(-3px);
-  border-color: var(--card-accent, var(--accent-line));
-  background: var(--card-bg-hover);
-  box-shadow: var(--shadow);
-}
-.card-icon {
-  flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--accent-soft);
-  font-size: 18px;
-  line-height: 1;
-}
-.card-body { min-width: 0; }
-.card-title {
-  display: block;
-  font-size: 14.5px;
-  font-weight: 650;
-  letter-spacing: .2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card-desc {
-  display: block;
-  margin-top: 2px;
-  font-size: 11.5px;
-  color: var(--text-dim);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+    .hero-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
 
-/* ---------- 关于本站 ---------- */
-.site-intro {
-  font-size: 13.5px;
-  line-height: 1.95;
-  color: var(--text-dim);
-  max-width: 780px;
-  letter-spacing: .2px;
-}
-.site-intro strong {
-  color: var(--text);
-  font-weight: 600;
-}
+    /* ---------- 状态卡（摸鱼 + 金价） ---------- */
+    .stat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        min-width: 152px;
+        min-height: 72px;
+        padding: 9px 12px;
+        border: 1px solid var(--card-border);
+        border-radius: 10px;
+        background: var(--card-bg);
+    }
 
-/* ---------- 响应式 ---------- */
-@media (max-width: 720px) {
-  .hero {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
-  .date-main { font-size: 19px; }
-  .lunar-line { font-size: 12px; }
+    .stat-row {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+    }
 
-  .hero-right { gap: 8px; }
-  .stat {
-    flex: 1;
-    min-width: 0;
-    min-height: 68px;
-    padding: 8px 11px;
-  }
-  .stat-v { font-size: 15px; }
+    .stat-k {
+        font-size: 12px;
+        color: var(--text-dim);
+    }
 
-  .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-  .card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    min-height: 92px;
-    padding: 12px;
-  }
-  .card-title { font-size: 13.5px; }
-  .card-desc  { font-size: 11px; }
+    .stat-v {
+        font-size: 16px;
+        font-weight: 650;
+        color: var(--accent);
+        font-variant-numeric: tabular-nums;
+        letter-spacing: .3px;
+    }
 
-  .news-item { font-size: 13px; gap: 10px; padding: 9px 4px; }
-  .news-idx  { width: 20px; font-size: 11px; }
+    .stat-unit {
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--text-dim);
+        letter-spacing: 0;
+        margin-left: 2px;
+    }
 
-  .site-intro { font-size: 13px; line-height: 1.85; }
-}
+    .stat-bar {
+        height: 3px;
+        border-radius: 999px;
+        background: var(--bar-track);
+        overflow: hidden;
+    }
 
-@media (max-width: 360px) {
-  .grid { grid-template-columns: 1fr; }
-}
+    .stat-bar i {
+        display: block;
+        height: 100%;
+        border-radius: 999px;
+        background: var(--accent);
+        opacity: .85;
+    }
+
+    .stat-sub {
+        font-size: 11px;
+        color: var(--text-faint);
+        letter-spacing: .2px;
+    }
+
+    /* ---------- 分组 ---------- */
+    .group+.group {
+        margin-top: 36px;
+    }
+
+    .group-title {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: var(--text-dim);
+        margin-bottom: 14px;
+    }
+
+    .group-title::before {
+        content: "";
+        width: 3px;
+        height: 13px;
+        border-radius: 2px;
+        background: var(--accent);
+        opacity: .8;
+    }
+
+    .group-title::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--hairline);
+    }
+
+    /* ---------- 每日60s 新闻列表 ---------- */
+    .news-list {
+        border-top: 1px solid var(--hairline);
+    }
+
+    .news-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 10px 6px;
+        border-bottom: 1px solid var(--hairline);
+        font-size: 13.5px;
+        line-height: 1.75;
+        transition: background-color .15s, padding-left .15s;
+    }
+
+    .news-item:hover {
+        background: var(--accent-soft);
+        padding-left: 12px;
+    }
+
+    .news-idx {
+        flex-shrink: 0;
+        width: 24px;
+        padding-top: 1px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        letter-spacing: .5px;
+        opacity: .55;
+    }
+
+    .news-text {
+        color: var(--text);
+        min-width: 0;
+    }
+
+    .news-meta {
+        margin-top: 12px;
+        font-size: 11.5px;
+        color: var(--text-faint);
+        text-align: right;
+        letter-spacing: .3px;
+    }
+
+    /* ---------- 卡片网格 ---------- */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 12px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        min-height: 74px;
+        padding: 13px 14px;
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        background: var(--card-bg);
+        text-decoration: none;
+        color: inherit;
+        transition: transform .2s, border-color .2s,
+            background-color .2s, box-shadow .2s;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+        border-color: var(--card-accent, var(--accent-line));
+        background: var(--card-bg-hover);
+        box-shadow: var(--shadow);
+    }
+
+    .card-icon {
+        flex-shrink: 0;
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        background: var(--accent-soft);
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .card-body {
+        min-width: 0;
+    }
+
+    .card-title {
+        display: block;
+        font-size: 14.5px;
+        font-weight: 650;
+        letter-spacing: .2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-desc {
+        display: block;
+        margin-top: 2px;
+        font-size: 11.5px;
+        color: var(--text-dim);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* ---------- 关于本站 ---------- */
+    .site-intro {
+        font-size: 13.5px;
+        line-height: 1.95;
+        color: var(--text-dim);
+        max-width: 780px;
+        letter-spacing: .2px;
+    }
+
+    .site-intro strong {
+        color: var(--text);
+        font-weight: 600;
+    }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 720px) {
+        .hero {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 12px;
+        }
+
+        .date-main {
+            font-size: 19px;
+        }
+
+        .lunar-line {
+            font-size: 12px;
+        }
+
+        .hero-right {
+            gap: 8px;
+        }
+
+        .stat {
+            flex: 1;
+            min-width: 0;
+            min-height: 68px;
+            padding: 8px 11px;
+        }
+
+        .stat-v {
+            font-size: 15px;
+        }
+
+        .grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            min-height: 92px;
+            padding: 12px;
+        }
+
+        .card-title {
+            font-size: 13.5px;
+        }
+
+        .card-desc {
+            font-size: 11px;
+        }
+
+        .news-item {
+            font-size: 13px;
+            gap: 10px;
+            padding: 9px 4px;
+        }
+
+        .news-idx {
+            width: 20px;
+            font-size: 11px;
+        }
+
+        .site-intro {
+            font-size: 13px;
+            line-height: 1.85;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
 
 
@@ -364,36 +434,36 @@
 
 <!-- ===== 顶部信息区 ===== -->
 <header class="hero">
-  <div class="hero-left">
-    <div class="date-line">
-      <span class="date-main">2026-10-15</span>
-      <span class="date-week">星期四</span>
-    </div>
-    <div class="lunar-line">丙午年九月初六</div>
-  </div>
-
-  <div class="hero-right">
-    <div class="stat" title="本周摸鱼进度">
-      <div class="stat-row">
-        <span class="stat-k">本周摸鱼</span>
-        <span class="stat-v">57%</span>
-      </div>
-      <div class="stat-bar"><i style="width: 57%"></i></div>
-      <div class="stat-sub">
-        距离周末还有 2 天
-      </div>
+    <div class="hero-left">
+        <div class="date-line">
+            <span class="date-main">2026-10-16</span>
+            <span class="date-week">星期五</span>
+        </div>
+        <div class="lunar-line">丙午年九月初七</div>
     </div>
 
-    <div class="stat" title="今日金价">
-      <div class="stat-k">今日金价</div>
-      <div class="stat-v">
-        895<span class="stat-unit">元/克</span>
-      </div>
-      <div class="stat-sub">
-        高 897.18 · 低 885.47
-      </div>
+    <div class="hero-right">
+        <div class="stat" title="本周摸鱼进度">
+            <div class="stat-row">
+                <span class="stat-k">本周摸鱼</span>
+                <span class="stat-v">71%</span>
+            </div>
+            <div class="stat-bar"><i style="width: 71%"></i></div>
+            <div class="stat-sub">
+                距离周末还有 1 天
+            </div>
+        </div>
+
+        <div class="stat" title="今日金价">
+            <div class="stat-k">今日金价</div>
+            <div class="stat-v">
+                899.9<span class="stat-unit">元/克</span>
+            </div>
+            <div class="stat-sub">
+                高 902.29 · 低 893.8
+            </div>
+        </div>
     </div>
-  </div>
 </header>
 
 <div class="hairline"></div>
@@ -401,241 +471,220 @@
 
 <!-- ===== 每日60s ===== -->
 <section class="group">
-  <h2 class="group-title">每日60s</h2>
+    <h2 class="group-title">每日60s</h2>
 
-  <div class="news-list">
-    <div class="news-item">
-      <span class="news-idx">01</span>
-      <span class="news-text">9 月全国居民消费价格同比上涨 0.9%，汽油价格上涨 16.6%，PPI 同比上涨 5.0%</span>
+    <div class="news-list">
+        <div class="news-item">
+            <span class="news-idx">01</span>
+            <span class="news-text">2026 软科中国最好学科排名发布：北大、清华领跑，复旦、上交并列第三</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">02</span>
+            <span class="news-text">中疾控：流感活动近期有所波动，南方省份检测阳性率处于中流行水平</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">03</span>
+            <span class="news-text">京东天猫同日发布 “双 11” 策略：京东主打现货直发，天猫延续预售体系，AI 成共同关键词</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">04</span>
+            <span class="news-text">深圳、杭州同日发布现房销售细则，目前全国已有北京、上海、广州、武汉等 7 城落地细则</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">05</span>
+            <span class="news-text">深圳：APEC 会议期间倡议错峰出行、居家办公；公交地铁票价打五折，自愿申报并停用私家车有奖励</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">06</span>
+            <span class="news-text">国际油价高位震荡，国内新一轮油价调整搁浅，10 月 15 日国内成品油价格不作调整</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">07</span>
+            <span class="news-text">DeepSeek 早高峰宕机 5 小时，目前服务已恢复，官方致歉并公布补偿方案：所有 API 用户 7 天内的消耗金额全额返还</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">08</span>
+            <span class="news-text">有老人为看短剧 2 年内在多个短剧小程序累计充值 22 万，媒体：老年人也需要 “数字防火墙”</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">09</span>
+            <span class="news-text">A 股市值 “一哥” 易主：长鑫科技市值两月内跌去 1 万亿，工商银行重回 A 股总市值第一</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">10</span>
+            <span class="news-text">商务部：我国外商直接投资权益存量 26.8 万亿元，连续 6 年实现增长，位居全球第二</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">11</span>
+            <span class="news-text">日本叶菜价格集体暴涨，一棵白菜卖到 42 元，消费者直呼太贵，当地业内人士：短期内难以回落</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">12</span>
+            <span class="news-text">高市早苗公开 “诉苦”：早上要洗澡化妆，比男性首相多花三四个小时</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">13</span>
+            <span class="news-text">韩国总统李在明颠覆性推动 “迁都”：首尔经济首都、世宗行政首都</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">14</span>
+            <span class="news-text">德国拟 2027 年开征含糖饮料税，分级税率引导配方改良，全球已有近 120 个国家征收含糖饮料税</span>
+        </div>
+        <div class="news-item">
+            <span class="news-idx">15</span>
+            <span class="news-text">美官员称美国已制定新的对伊打击方案，其中包括考虑使用 “炸弹之母” 打击其核设施</span>
+        </div>
     </div>
-    <div class="news-item">
-      <span class="news-idx">02</span>
-      <span class="news-text">9 月我国进出口 5.16 万亿元，首次突破 5 万亿元，增长 27.5%，连续 6 个月保持两位数增长</span>
+    <div class="news-meta">
+        更新于 2026/10/16 05:30 · 共 15 条
     </div>
-    <div class="news-item">
-      <span class="news-idx">03</span>
-      <span class="news-text">前三季度社会融资规模增量累计为 27.46 万亿元，比上年同期少 2.63 万亿元</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">04</span>
-      <span class="news-text">前 9 个月一线城市 TOP10 楼盘合计销售超 2000 亿元，上海约 698 亿元稳居首位</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">05</span>
-      <span class="news-text">央行：10 月 15 日将开展 7000 亿元 6 个月期限买断式逆回购操作</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">06</span>
-      <span class="news-text">吉林：落实中小学生 “雪假” 制度，每年 12 月安排 3 个工作日冰雪假期</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">07</span>
-      <span class="news-text">低分班教师被安排与 &#34;耻辱&#34; 背景板合影最新进展：当地教体局负责人已被调离岗位</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">08</span>
-      <span class="news-text">蒙古国草原火蔓延至我边境最新情况：7 天 6 夜堵截 330 余公里，全线未烧入我国境内</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">09</span>
-      <span class="news-text">香港一男子在周生生门店佯装看珠宝劫走约 7 万港元金链，品牌回应：已交警方处理</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">10</span>
-      <span class="news-text">海关总署：今年前三季度我国对美国贸易持续回升，进出口 3.18 万亿元，增长 4.1%</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">11</span>
-      <span class="news-text">外媒称中国买家购入 8 至 10 船美国大豆，12 月起开始装运，每船约可装载 6.5 万吨大豆</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">12</span>
-      <span class="news-text">国际货币基金组织预测：日本 GDP 将在明年被印度和英国超越，全球排名将由目前的第四位降至第六位</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">13</span>
-      <span class="news-text">美国 9 月 CPI 同比上涨 3.7%，高于市场预期，美联储 10 月加息概率升至 43.7%</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">14</span>
-      <span class="news-text">特朗普下令严查赴美生子，审查范围追溯至 6 年前，若被认定，现有的美国签证或将被撤销</span>
-    </div>
-    <div class="news-item">
-      <span class="news-idx">15</span>
-      <span class="news-text">乌官员称 “星链” 限制高速移动终端连接，致乌军多任务中断，事先并未收到相关警告</span>
-    </div>
-  </div>
-  <div class="news-meta">
-    更新于 2026/10/15 05:33 · 共 15 条
-  </div>
 </section>
 
 
 <!-- ===== 导航分组 ===== -->
 <section class="group">
-  <h2 class="group-title">日历与壁纸</h2>
-  <div class="grid">
-    <a class="card"
-       href="/lunar/"
-       style="--card-accent: #c8524a;">
-      <span class="card-icon">🌙</span>
-      <span class="card-body">
+    <h2 class="group-title">日历与壁纸</h2>
+    <div class="grid">
+        <a class="card" href="/lunar/" style="--card-accent: #c8524a;">
+            <span class="card-icon">🌙</span>
+            <span class="card-body">
         <span class="card-title">农历黄历</span>
-        <span class="card-desc">宜忌 · 干支 · 生肖</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/bing/"
-       style="--card-accent: #6ecfbf;">
-      <span class="card-icon">🖼️</span>
-      <span class="card-body">
+            <span class="card-desc">宜忌 · 干支 · 生肖</span>
+            </span>
+        </a>
+        <a class="card" href="/bing/" style="--card-accent: #6ecfbf;">
+            <span class="card-icon">🖼️</span>
+            <span class="card-body">
         <span class="card-title">必应每日壁纸</span>
-        <span class="card-desc">今日高清桌面背景</span>
-      </span>
-    </a>
-  </div>
+            <span class="card-desc">今日高清桌面背景</span>
+            </span>
+        </a>
+    </div>
 </section>
 <section class="group">
-  <h2 class="group-title">资讯精选</h2>
-  <div class="grid">
-    <a class="card"
-       href="/history/"
-       style="--card-accent: #b08a5e;">
-      <span class="card-icon">📅</span>
-      <span class="card-body">
+    <h2 class="group-title">资讯精选</h2>
+    <div class="grid">
+        <a class="card" href="/history/" style="--card-accent: #b08a5e;">
+            <span class="card-icon">📅</span>
+            <span class="card-body">
         <span class="card-title">历史上的今天</span>
-        <span class="card-desc">回望同一天发生的事</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/ai-news/"
-       style="--card-accent: #5b7cfa;">
-      <span class="card-icon">🤖</span>
-      <span class="card-body">
+            <span class="card-desc">回望同一天发生的事</span>
+            </span>
+        </a>
+        <a class="card" href="/ai-news/" style="--card-accent: #5b7cfa;">
+            <span class="card-icon">🤖</span>
+            <span class="card-body">
         <span class="card-title">AI 资讯快报</span>
-        <span class="card-desc">人工智能领域每日动态</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/it-news/"
-       style="--card-accent: #4a9ec8;">
-      <span class="card-icon">💻</span>
-      <span class="card-body">
+            <span class="card-desc">人工智能领域每日动态</span>
+            </span>
+        </a>
+        <a class="card" href="/it-news/" style="--card-accent: #4a9ec8;">
+            <span class="card-icon">💻</span>
+            <span class="card-body">
         <span class="card-title">IT 资讯</span>
-        <span class="card-desc">科技圈热门榜单</span>
-      </span>
-    </a>
-  </div>
+            <span class="card-desc">科技圈热门榜单</span>
+            </span>
+        </a>
+    </div>
 </section>
 <section class="group">
-  <h2 class="group-title">热搜榜</h2>
-  <div class="grid">
-    <a class="card"
-       href="/hot/weibo/"
-       style="--card-accent: #ff6b4a;">
-      <span class="card-icon">🔥</span>
-      <span class="card-body">
+    <h2 class="group-title">热搜榜</h2>
+    <div class="grid">
+        <a class="card" href="/hot/weibo/" style="--card-accent: #ff6b4a;">
+            <span class="card-icon">🔥</span>
+            <span class="card-body">
         <span class="card-title">微博热搜</span>
-        <span class="card-desc">全网最热话题</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/hot/toutiao/"
-       style="--card-accent: #e63946;">
-      <span class="card-icon">📢</span>
-      <span class="card-body">
+            <span class="card-desc">全网最热话题</span>
+            </span>
+        </a>
+        <a class="card" href="/hot/toutiao/" style="--card-accent: #e63946;">
+            <span class="card-icon">📢</span>
+            <span class="card-body">
         <span class="card-title">头条热搜榜</span>
-        <span class="card-desc">今日头条热点</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/hot/baidu/"
-       style="--card-accent: #2563eb;">
-      <span class="card-icon">🔍</span>
-      <span class="card-body">
+            <span class="card-desc">今日头条热点</span>
+            </span>
+        </a>
+        <a class="card" href="/hot/baidu/" style="--card-accent: #2563eb;">
+            <span class="card-icon">🔍</span>
+            <span class="card-body">
         <span class="card-title">百度热搜榜</span>
-        <span class="card-desc">热搜关键词</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/hot/quark/"
-       style="--card-accent: #8b5cf6;">
-      <span class="card-icon">⚡</span>
-      <span class="card-body">
+            <span class="card-desc">热搜关键词</span>
+            </span>
+        </a>
+        <a class="card" href="/hot/quark/" style="--card-accent: #8b5cf6;">
+            <span class="card-icon">⚡</span>
+            <span class="card-body">
         <span class="card-title">夸克热点</span>
-        <span class="card-desc">夸克浏览器热搜</span>
-      </span>
-    </a>
-  </div>
+            <span class="card-desc">夸克浏览器热搜</span>
+            </span>
+        </a>
+    </div>
 </section>
 <section class="group">
-  <h2 class="group-title">社区榜</h2>
-  <div class="grid">
-    <a class="card"
-       href="/hot/zhihu/"
-       style="--card-accent: #0084ff;">
-      <span class="card-icon">💡</span>
-      <span class="card-body">
+    <h2 class="group-title">社区榜</h2>
+    <div class="grid">
+        <a class="card" href="/hot/zhihu/" style="--card-accent: #0084ff;">
+            <span class="card-icon">💡</span>
+            <span class="card-body">
         <span class="card-title">知乎话题榜</span>
-        <span class="card-desc">今日高赞讨论</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/hot/tieba/"
-       style="--card-accent: #6366f1;">
-      <span class="card-icon">💬</span>
-      <span class="card-body">
+            <span class="card-desc">今日高赞讨论</span>
+            </span>
+        </a>
+        <a class="card" href="/hot/tieba/" style="--card-accent: #6366f1;">
+            <span class="card-icon">💬</span>
+            <span class="card-body">
         <span class="card-title">百度贴吧话题榜</span>
-        <span class="card-desc">吧友热议话题</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/hot/hn/"
-       style="--card-accent: #f59e0b;">
-      <span class="card-icon">🧠</span>
-      <span class="card-body">
+            <span class="card-desc">吧友热议话题</span>
+            </span>
+        </a>
+        <a class="card" href="/hot/hn/" style="--card-accent: #f59e0b;">
+            <span class="card-icon">🧠</span>
+            <span class="card-body">
         <span class="card-title">Hacker News</span>
-        <span class="card-desc">极客圈热帖</span>
-      </span>
-    </a>
-  </div>
+            <span class="card-desc">极客圈热帖</span>
+            </span>
+        </a>
+    </div>
 </section>
 <section class="group">
-  <h2 class="group-title">影音榜</h2>
-  <div class="grid">
-    <a class="card"
-       href="/hot/douyin/"
-       style="--card-accent: #fe2c55;">
-      <span class="card-icon">🎵</span>
-      <span class="card-body">
+    <h2 class="group-title">影音榜</h2>
+    <div class="grid">
+        <a class="card" href="/hot/douyin/" style="--card-accent: #fe2c55;">
+            <span class="card-icon">🎵</span>
+            <span class="card-body">
         <span class="card-title">抖音热搜</span>
-        <span class="card-desc">短视频热点</span>
-      </span>
-    </a>
-    <a class="card"
-       href="/hot/maoyan/"
-       style="--card-accent: #d4a017;">
-      <span class="card-icon">🎥</span>
-      <span class="card-body">
+            <span class="card-desc">短视频热点</span>
+            </span>
+        </a>
+        <a class="card" href="/hot/maoyan/" style="--card-accent: #d4a017;">
+            <span class="card-icon">🎥</span>
+            <span class="card-body">
         <span class="card-title">猫眼票房</span>
-        <span class="card-desc">影史票房总榜</span>
-      </span>
-    </a>
-  </div>
+            <span class="card-desc">影史票房总榜</span>
+            </span>
+        </a>
+        <a class="card" href="/hot/teleplay/" style="--card-accent: #7c5cff;">
+            <span class="card-icon">📺</span>
+            <span class="card-body">
+        <span class="card-title">热播电视剧榜</span>
+            <span class="card-desc">当下最火的电视剧</span>
+            </span>
+        </a>
+    </div>
 </section>
 
 
 <!-- ===== 关于本站（SEO 静态文字） ===== -->
 <section class="group">
-  <h2 class="group-title">关于本站</h2>
-  <p class="site-intro">
-    <strong>iTboy</strong> 是一个安静的个人信息门户，每天自动更新，无需人工干预。
-    聚合 60 秒读懂世界、AI 资讯快报、微博热搜、知乎话题榜、IT 资讯、
-    黄金价格、农历黄历、历史上的今天、必应每日壁纸等内容，
-    涵盖新闻资讯、热搜榜单、生活工具与影音娱乐五大类共 15 个功能模块。
-    所有数据来自公开渠道，页面以纯静态形式呈现，无广告、无弹窗、无登录，打开即读。
-    全站支持深色与浅色主题自由切换，适配手机、平板与桌面三档屏幕。
-  </p>
+    <h2 class="group-title">关于本站</h2>
+    <p class="site-intro">
+        <strong>iTboy</strong> 是一个安静的个人信息门户，每天自动更新，无需人工干预。
+        聚合 60 秒读懂世界、AI 资讯快报、微博热搜、知乎话题榜、IT 资讯、
+        黄金价格、农历黄历、历史上的今天、必应每日壁纸等内容，
+        涵盖新闻资讯、热搜榜单、生活工具与影音娱乐五大类共 15 个功能模块。
+        所有数据来自公开渠道，页面以纯静态形式呈现，无广告、无弹窗、无登录，打开即读。
+        全站支持深色与浅色主题自由切换，适配手机、平板与桌面三档屏幕。
+    </p>
 </section>
 
   </main>
