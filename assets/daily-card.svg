@@ -37,10 +37,10 @@
 
   <!-- 日期 -->
   <text x="40" y="130" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="38"
-        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-10-16</text>
+        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-10-17</text>
 
   <text x="40" y="162" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#8b949e" letter-spacing="0.5">星期五 · 丙午年九月初七</text>
+        fill="#8b949e" letter-spacing="0.5">星期六 · 丙午年九月初八</text>
 
   <!-- 分隔线 1 -->
   <line x1="40" y1="195" x2="760" y2="195"
@@ -53,25 +53,25 @@
         fill="#5a636e" letter-spacing="1.5">本周摸鱼</text>
 
   <text x="40" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#5ec9b8">71<tspan font-size="22"
+        font-weight="700" fill="#5ec9b8">86<tspan font-size="22"
         opacity="0.7">%</tspan></text>
 
   <rect x="40" y="312" width="300" height="4" rx="2" fill="#1a2028"/>
-  <rect x="40" y="312" width="213" height="4" rx="2" fill="#00e0b8"/>
+  <rect x="40" y="312" width="258" height="4" rx="2" fill="#00e0b8"/>
 
   <text x="40" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">距离周末还有 1 天</text>
+        fill="#8b949e">距离周末还有 0 天</text>
 
   <!-- 金价 -->
   <text x="460" y="235" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12"
         fill="#5a636e" letter-spacing="1.5">今日金价</text>
 
   <text x="460" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#c9a961">898.49<tspan
+        font-weight="700" fill="#c9a961">897.86<tspan
         font-size="16" opacity="0.7"> 元/克</tspan></text>
 
   <text x="460" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">高 902.29 · 低 893.8</text>
+        fill="#8b949e">高 897.86 · 低 897.86</text>
 
   <!-- 分隔线 2 -->
   <line x1="40" y1="388" x2="760" y2="388"
@@ -87,15 +87,15 @@
   <text x="40" y="465" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">壹</text>
   <text x="80" y="465" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">2026 软科中国最好学科排名发布：北大、清华领跑，复旦、上交并列第三</text>
+        fill="#e8edf2">全国铁路新增 “X” 字头列车：将用于未来最高时速 350 公里以上的复…</text>
   <text x="40" y="505" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">贰</text>
   <text x="80" y="505" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">中疾控：流感活动近期有所波动，南方省份检测阳性率处于中流行水平</text>
+        fill="#e8edf2">苹果首款折叠屏手机 iPhone Duo 预售秒罄，发货已排到 2027…</text>
   <text x="40" y="545" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">叁</text>
   <text x="80" y="545" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">京东天猫同日发布 “双 11” 策略：京东主打现货直发，天猫延续预售体系…</text>
+        fill="#e8edf2">尾号 “8899999” 手机号拍卖以 28 万余元成交，运营商客服：过…</text>
 
   <!-- 网址 -->
   <text x="760" y="588" text-anchor="end"
