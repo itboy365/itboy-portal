@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 防闪白：必须在 CSS 之前 -->
-<script>
-  (function () {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 防闪白：必须在 CSS 之前 -->
+    <script>
+        (function () {
     try {
       var saved = localStorage.getItem('qx-theme');
       if (saved) {
@@ -16,16 +17,37 @@
       }
     } catch (e) {}
   })();
-</script>
+    </script>
 
-<title>热播电视剧榜 · iTboy</title>
-<meta name="description" content="当下最火的电视剧">
-<meta name="theme-color" content="#0a0d12">
+    <title>热播电视剧榜 - 当下最火的电视剧 - iTboy</title>
+    <meta name="description" content="当下最火的电视剧">
+    <meta name="theme-color" content="#0a0d12">
 
-<style>
-  :root { --accent: #7c5cff; }
-</style>
-<link rel="stylesheet" href="/assets/base.css">
+    <!-- SEO: Canonical 统一权威链接 -->
+    <link rel="canonical" href="https://www.itboy.top/hot/teleplay/">
+
+    <!-- SEO: Open Graph (OG) 社交分享标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="iTboy">
+    <meta property="og:title" content="热播电视剧榜 - 当下最火的电视剧 - iTboy">
+    <meta property="og:description" content="当下最火的电视剧">
+    <meta property="og:url"
+        content="https://www.itboy.top/hot/teleplay/">
+    <meta property="og:image" content="https://www.itboy.top/assets/daily-card.svg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        :root {
+            --accent: {
+                    {
+                    accent
+                }
+            }
+
+            ;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/base.css">
 
 <script type="application/ld+json">
     {
@@ -101,8 +123,8 @@
 }
 </script>
 
-<script type="application/ld+json">
-{
+    <script type="application/ld+json">
+        {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -118,29 +140,29 @@
       "item": "https://www.itboy.top/hot/teleplay/"
     }  ]
 }
-</script>
+    </script>
 
 </head>
 
 <body>
-<div class="page">
+    <div class="page">
 
-  <!-- ===== 顶栏 ===== -->
-  <header class="topbar">
-    <a class="brand" href="/">
-      <span class="brand-name">iTboy</span>
-    </a>
+        <!-- ===== 顶栏 ===== -->
+        <header class="topbar">
+            <a class="brand" href="/">
+                <span class="brand-name">iTboy</span>
+            </a>
 
-    <div class="topbar-right">
-      <a class="back-btn" href="/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 12H5M12 19l-7-7 7-7"/>
-        </svg>
-        <span>返回首页</span>
-      </a>
+            <div class="topbar-right">
+                <a class="back-btn" href="/">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    <span>返回首页</span>
+                </a>
 
-      <button class="theme-toggle" id="themeToggle"
+                <button class="theme-toggle" id="themeToggle"
               aria-label="切换深浅色主题" title="切换主题">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -152,36 +174,37 @@
           <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
         </svg>
       </button>
-    </div>
-  </header>
+            </div>
+        </header>
 
-  <div class="hairline"></div>
+        <div class="hairline"></div>
 
-  <!-- ===== 主体 ===== -->
-  <main>
+        <!-- ===== 主体 ===== -->
+        <main>
 
-    <nav class="breadcrumb" aria-label="面包屑导航">
-          <a href="/">首页</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <span class="breadcrumb-current" aria-current="page">热播电视剧榜</span>
-    </nav>
+            <nav class="breadcrumb" aria-label="面包屑导航">
+                <a href="/">首页</a>
+                <span class="breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="breadcrumb-current" aria-current="page">热播电视剧榜</span>
+            </nav>
 
 
 <div class="page-head">
     <h1 class="page-title">热播电视剧榜</h1>
     <p class="page-desc">当下最火的电视剧</p>
-    <p class="page-meta">更新于 2026-10-17 18:00</p>
+    <p class="page-meta">更新于 2026-10-18 08:00</p>
 </div>
 
-<p class="page-intro">百度电视剧榜实时反映当下热播剧集的网络热度，综合播放量、搜索指数、讨论量等维度排序。榜单覆盖国产剧、港台剧、欧美剧与日韩剧，包含剧名、剧情简介、主演信息与实时热度值。数据来自百度搜索与视频平台的公开统计，适合追剧用户快速了解当前最受关注的电视剧作品。</p>
+<p class="page-intro">当前榜单排名第一的是「九门」。百度电视剧榜实时反映当下热播剧集的网络热度，综合播放量、搜索指数、讨论量等维度排序。榜单覆盖国产剧、港台剧、欧美剧与日韩剧，包含剧名、剧情简介、主演信息与实时热度值。数据来自百度搜索与视频平台的公开统计，适合追剧用户快速了解当前最受关注的电视剧作品。</p>
 
 
 <div class="rank-list">
-    <a class="rank-item" href="https://baike.baidu.com/item/%E4%B9%9D%E9%97%A8/64883150?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E4%B9%9D%E9%97%A8/64883150?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">01</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001211803186.jpg" alt="九门" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001211803186.jpg" alt="九门 电视剧封面" title="九门" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -196,11 +219,12 @@
         <span class="rank-hot">9.55w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E9%9D%9E%E4%BB%BD%E4%B9%8B%E7%BD%AA/63762065?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E9%9D%9E%E4%BB%BD%E4%B9%8B%E7%BD%AA/63762065?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">02</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001351723838.jpg" alt="非份之罪" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001351723838.jpg" alt="非份之罪 电视剧封面" title="非份之罪" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -215,11 +239,12 @@
         <span class="rank-hot">9.32w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E8%BF%99%E4%B8%80%E7%A7%92%E8%BF%87%E7%81%AB/65762063?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E8%BF%99%E4%B8%80%E7%A7%92%E8%BF%87%E7%81%AB/65762063?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">03</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001445696503.jpg" alt="这一秒过火" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001445696503.jpg" alt="这一秒过火 电视剧封面" title="这一秒过火" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -234,11 +259,12 @@
         <span class="rank-hot">8.97w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E7%99%BE%E8%8A%B1%E6%9D%80/65495865?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E7%99%BE%E8%8A%B1%E6%9D%80/65495865?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">04</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001769695180.jpg" alt="百花杀" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001769695180.jpg" alt="百花杀 电视剧封面" title="百花杀" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -253,11 +279,12 @@
         <span class="rank-hot">8.15w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E5%A4%A9%E6%89%8D%EF%BC%8C%E5%A5%B3%E5%8F%8B/67903610?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E5%A4%A9%E6%89%8D%EF%BC%8C%E5%A5%B3%E5%8F%8B/67903610?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">05</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001875789073.jpg" alt="天才，女友" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786001875789073.jpg" alt="天才，女友 电视剧封面" title="天才，女友" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -272,11 +299,12 @@
         <span class="rank-hot">7.5w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E5%BE%A1%E5%BB%B7%E8%B0%A3/64971706?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E5%BE%A1%E5%BB%B7%E8%B0%A3/64971706?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">06</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002032153290.jpg" alt="御廷谣" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002032153290.jpg" alt="御廷谣 电视剧封面" title="御廷谣" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -291,11 +319,12 @@
         <span class="rank-hot">7.34w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E5%B0%8F%E8%8A%B3/68177670?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E5%B0%8F%E8%8A%B3/68177670?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">07</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002114265165.jpg" alt="小芳" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002114265165.jpg" alt="小芳 电视剧封面" title="小芳" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -310,11 +339,12 @@
         <span class="rank-hot">6.58w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E9%9B%80%E9%AA%A8/65443922?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E9%9B%80%E9%AA%A8/65443922?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">08</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002212836252.jpg" alt="雀骨" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002212836252.jpg" alt="雀骨 电视剧封面" title="雀骨" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -329,11 +359,12 @@
         <span class="rank-hot">5.64w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E6%82%AC%E6%A1%88/63715018?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E6%82%AC%E6%A1%88/63715018?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">09</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002339317627.jpg" alt="悬案" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002339317627.jpg" alt="悬案 电视剧封面" title="悬案" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -348,11 +379,12 @@
         <span class="rank-hot">4.53w</span>
         </span>
     </a>
-    <a class="rank-item" href="https://baike.baidu.com/item/%E4%BA%BA%E9%B1%BC/59177126?fr=resou"         target="_blank" rel="noopener">
+    <!-- SEO：加了 nofollow 防止权重流失 -->
+    <a class="rank-item" href="https://baike.baidu.com/item/%E4%BA%BA%E9%B1%BC/59177126?fr=resou"         target="_blank" rel="nofollow noopener">
         <span class="rank-idx">10</span>
 
         <span class="rank-cover">
-      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002408174735.jpg" alt="人鱼" loading="lazy">
+      <img src="https://b.bdstatic.com/searchbox/file/cmsuploader/20260806/1786002408174735.jpg" alt="人鱼 电视剧封面" title="人鱼" loading="lazy">
     </span>
 
         <span class="rank-body">
@@ -370,25 +402,115 @@
 </div>
 
 
-  </main>
 
-  <!-- ===== 页脚 ===== -->
-  <footer class="footer">
-    <div class="footer-left">
-      <div>© 2026 iTboy · 保留所有权利</div>
-      <div>内容均来自互联网 · 仅供信息浏览参考</div>
-      <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener">iTboy</a></div>
+            <div class="related-section">
+                <h3 class="related-title">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px;">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    探索更多内容
+                </h3>
+                <div class="related-grid">
+                    <a class="related-card" href="/hot/baidu/">
+                        <span class="related-card-title">百度热搜榜</span>
+                        <span class="related-card-desc">热搜关键词</span>
+                    </a>
+                    <a class="related-card" href="/hot/maoyan/">
+                        <span class="related-card-title">猫眼票房</span>
+                        <span class="related-card-desc">影史票房总榜</span>
+                    </a>
+                    <a class="related-card" href="/hot/toutiao/">
+                        <span class="related-card-title">头条热搜榜</span>
+                        <span class="related-card-desc">今日头条热点</span>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- ===== 页脚 ===== -->
+        <footer class="footer">
+            <div class="footer-left">
+                <div>© 2026 iTboy · 保留所有权利</div>
+                <div>内容均来自互联网 · 仅供信息浏览参考</div>
+                <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener nofollow">iTboy</a></div>
+            </div>
+            <div class="footer-right">
+                <a href="/sitemap.xml">Sitemap</a> ·
+                <a href="/robots.txt">Robots</a>
+            </div>
+        </footer>
+
     </div>
-    <div class="footer-right">
-      <a href="/sitemap.xml">Sitemap</a> ·
-      <a href="/robots.txt">Robots</a>
-    </div>
-  </footer>
 
-</div>
+    <style>
+        /* ============================================================
+   相关推荐模块样式（内联在 base.html 中，自动全站生效）
+   ============================================================ */
+        .related-section {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px dashed var(--card-border);
+        }
 
-<script>
-  (function () {
+        .related-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            padding: 14px 16px;
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            background: var(--card-bg);
+            text-decoration: none;
+            color: inherit;
+            transition: transform .2s, border-color .2s, background-color .2s;
+        }
+
+        .related-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-line);
+            background: var(--card-bg-hover);
+        }
+
+        .related-card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .related-card-desc {
+            font-size: 11.5px;
+            color: var(--text-faint);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media (max-width: 720px) {
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script>
+        (function () {
     var btn = document.getElementById('themeToggle');
     if (!btn) return;
     btn.addEventListener('click', function () {
@@ -398,18 +520,19 @@
       try { localStorage.setItem('qx-theme', next); } catch (e) {}
     });
   })();
-</script>
+    </script>
 
-<!-- 百度统计 -->
-<script>
-var _hmt = _hmt || [];
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?edfc3c91ef0069bdd3633cd46538a3d0";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script>
+    </script>
 
 </body>
+
 </html>

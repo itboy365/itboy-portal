@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 防闪白：必须在 CSS 之前 -->
-<script>
-  (function () {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 防闪白：必须在 CSS 之前 -->
+    <script>
+        (function () {
     try {
       var saved = localStorage.getItem('qx-theme');
       if (saved) {
@@ -16,36 +17,57 @@
       }
     } catch (e) {}
   })();
-</script>
+    </script>
 
-<title>必应每日壁纸 · iTboy</title>
-<meta name="description" content="今日高清桌面背景">
-<meta name="theme-color" content="#0a0d12">
+    <title>必应每日壁纸 - 今日高清桌面背景 - iTboy</title>
+    <meta name="description" content="今日高清桌面背景">
+    <meta name="theme-color" content="#0a0d12">
 
-<style>
-  :root { --accent: #6ecfbf; }
-</style>
-<link rel="stylesheet" href="/assets/base.css">
+    <!-- SEO: Canonical 统一权威链接 -->
+    <link rel="canonical" href="https://www.itboy.top/bing/">
+
+    <!-- SEO: Open Graph (OG) 社交分享标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="iTboy">
+    <meta property="og:title" content="必应每日壁纸 - 今日高清桌面背景 - iTboy">
+    <meta property="og:description" content="今日高清桌面背景">
+    <meta property="og:url"
+        content="https://www.itboy.top/bing/">
+    <meta property="og:image" content="https://www.itboy.top/assets/daily-card.svg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        :root {
+            --accent: {
+                    {
+                    accent
+                }
+            }
+
+            ;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/base.css">
 
 <script type="application/ld+json">
-{
+    {
   "@context": "https://schema.org",
   "@type": "ImageObject",
   "name": "必应每日壁纸",
-  "description": "发掘尘封的过去",
+  "description": "75载，风华正茂",
   "url": "https://www.itboy.top/bing/",
-  "contentUrl": "https://bing.com/th?id=OHR.ChauvetPaintingsFrance_ZH-CN3150703955_1920x1080.jpg",
-  "thumbnailUrl": "https://bing.com/th?id=OHR.ChauvetPaintingsFrance_ZH-CN3150703955_1920x1080.jpg",
-  "image": "https://bing.com/th?id=OHR.ChauvetPaintingsFrance_ZH-CN3150703955_UHD.jpg",
-  "datePublished": "2026-10-17",
+  "contentUrl": "https://bing.com/th?id=OHR.DolbadarnWales_ZH-CN3649667806_1920x1080.jpg",
+  "thumbnailUrl": "https://bing.com/th?id=OHR.DolbadarnWales_ZH-CN3649667806_1920x1080.jpg",
+  "image": "https://bing.com/th?id=OHR.DolbadarnWales_ZH-CN3649667806_UHD.jpg",
+  "datePublished": "2026-10-18",
   "inLanguage": "zh-CN"
 ,
-  "creditText": "肖维岩洞艺术作品等比例复制品，瓦隆蓬达尔克，法国 (© Audrey Poree/Alamy)"
+  "creditText": "多巴达恩城堡，兰贝里斯，斯诺登尼亚国家公园，威尔士 (© joe daniel price/Getty Images)"
 }
 </script>
 
-<script type="application/ld+json">
-{
+    <script type="application/ld+json">
+        {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -61,29 +83,29 @@
       "item": "https://www.itboy.top/bing/"
     }  ]
 }
-</script>
+    </script>
 
 </head>
 
 <body>
-<div class="page">
+    <div class="page">
 
-  <!-- ===== 顶栏 ===== -->
-  <header class="topbar">
-    <a class="brand" href="/">
-      <span class="brand-name">iTboy</span>
-    </a>
+        <!-- ===== 顶栏 ===== -->
+        <header class="topbar">
+            <a class="brand" href="/">
+                <span class="brand-name">iTboy</span>
+            </a>
 
-    <div class="topbar-right">
-      <a class="back-btn" href="/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 12H5M12 19l-7-7 7-7"/>
-        </svg>
-        <span>返回首页</span>
-      </a>
+            <div class="topbar-right">
+                <a class="back-btn" href="/">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    <span>返回首页</span>
+                </a>
 
-      <button class="theme-toggle" id="themeToggle"
+                <button class="theme-toggle" id="themeToggle"
               aria-label="切换深浅色主题" title="切换主题">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -95,77 +117,168 @@
           <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
         </svg>
       </button>
-    </div>
-  </header>
+            </div>
+        </header>
 
-  <div class="hairline"></div>
+        <div class="hairline"></div>
 
-  <!-- ===== 主体 ===== -->
-  <main>
+        <!-- ===== 主体 ===== -->
+        <main>
 
-    <nav class="breadcrumb" aria-label="面包屑导航">
-          <a href="/">首页</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <span class="breadcrumb-current" aria-current="page">必应每日壁纸</span>
-    </nav>
+            <nav class="breadcrumb" aria-label="面包屑导航">
+                <a href="/">首页</a>
+                <span class="breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="breadcrumb-current" aria-current="page">必应每日壁纸</span>
+            </nav>
 
 
 <div class="page-head">
-  <h1 class="page-title">必应每日壁纸</h1>
-  <p class="page-desc">今日高清桌面背景</p>
-  <p class="page-meta">2026-10-17 10:00:11</p>
+    <h1 class="page-title">必应每日壁纸</h1>
+    <p class="page-desc">今日高清桌面背景</p>
+    <p class="page-meta">2026-10-18 00:00:26</p>
 </div>
 
 <p class="page-intro">必应每日壁纸每天自动更新一张高质量摄影作品，均由微软必应官方选送，包含自然风光、建筑人文、动物生态等主题。每张壁纸附有拍摄地介绍、摄影师版权信息，支持一键查看与下载 4K 原图，适合作为桌面与手机背景使用。</p>
 
 
 <figure class="hero-image">
-  <a href="https://bing.com/th?id=OHR.ChauvetPaintingsFrance_ZH-CN3150703955_UHD.jpg"
-     target="_blank" rel="noopener"
-     title="点击查看 4K 原图">
-    <img src="https://bing.com/th?id=OHR.ChauvetPaintingsFrance_ZH-CN3150703955_1920x1080.jpg"
-         alt="发掘尘封的过去"
+    <!-- SEO：加了 nofollow -->
+    <a href="https://bing.com/th?id=OHR.DolbadarnWales_ZH-CN3649667806_UHD.jpg" target="_blank" rel="nofollow noopener" title="点击查看必应壁纸 4K 原图">
+        <img src="https://bing.com/th?id=OHR.DolbadarnWales_ZH-CN3649667806_1920x1080.jpg"
+         alt="75载，风华正茂 - 今日高清桌面背景"
+         title="75载，风华正茂"
          loading="lazy">
-  </a>
+    </a>
 
-  <figcaption class="hero-caption">
-    <div class="hero-caption-title">发掘尘封的过去</div>
+    <figcaption class="hero-caption">
+        <div class="hero-caption-title">75载，风华正茂</div>
 
-    <div class="hero-caption-sub">发掘尘封的过去</div>
+        <div class="hero-caption-sub">75载，风华正茂</div>
 
-    <div class="hero-caption-meta">
-      <span>肖维岩洞艺术作品等比例复制品，瓦隆蓬达尔克，法国 (© Audrey Poree/Alamy)</span>
-      <span style="margin-left:14px;">
-        <a href="https://bing.com/th?id=OHR.ChauvetPaintingsFrance_ZH-CN3150703955_UHD.jpg"
-           target="_blank" rel="noopener"
+        <div class="hero-caption-meta">
+            <span>多巴达恩城堡，兰贝里斯，斯诺登尼亚国家公园，威尔士 (© joe daniel price/Getty Images)</span>
+            <span style="margin-left:14px;">
+        <!-- SEO：加了 nofollow -->
+        <a href="https://bing.com/th?id=OHR.DolbadarnWales_ZH-CN3649667806_UHD.jpg"
+           target="_blank" rel="nofollow noopener"
            style="color:var(--accent);text-decoration:none;">
           下载 4K 原图 →
         </a>
       </span>
-    </div>
-  </figcaption>
+        </div>
+    </figcaption>
 </figure>
 
 
-  </main>
 
-  <!-- ===== 页脚 ===== -->
-  <footer class="footer">
-    <div class="footer-left">
-      <div>© 2026 iTboy · 保留所有权利</div>
-      <div>内容均来自互联网 · 仅供信息浏览参考</div>
-      <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener">iTboy</a></div>
+            <div class="related-section">
+                <h3 class="related-title">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px;">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    探索更多内容
+                </h3>
+                <div class="related-grid">
+                    <a class="related-card" href="/hot/tieba/">
+                        <span class="related-card-title">百度贴吧话题榜</span>
+                        <span class="related-card-desc">吧友热议话题</span>
+                    </a>
+                    <a class="related-card" href="/hot/quark/">
+                        <span class="related-card-title">夸克热点</span>
+                        <span class="related-card-desc">夸克浏览器热搜</span>
+                    </a>
+                    <a class="related-card" href="/hot/toutiao/">
+                        <span class="related-card-title">头条热搜榜</span>
+                        <span class="related-card-desc">今日头条热点</span>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- ===== 页脚 ===== -->
+        <footer class="footer">
+            <div class="footer-left">
+                <div>© 2026 iTboy · 保留所有权利</div>
+                <div>内容均来自互联网 · 仅供信息浏览参考</div>
+                <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener nofollow">iTboy</a></div>
+            </div>
+            <div class="footer-right">
+                <a href="/sitemap.xml">Sitemap</a> ·
+                <a href="/robots.txt">Robots</a>
+            </div>
+        </footer>
+
     </div>
-    <div class="footer-right">
-      <a href="/sitemap.xml">Sitemap</a> ·
-      <a href="/robots.txt">Robots</a>
-    </div>
-  </footer>
 
-</div>
+    <style>
+        /* ============================================================
+   相关推荐模块样式（内联在 base.html 中，自动全站生效）
+   ============================================================ */
+        .related-section {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px dashed var(--card-border);
+        }
 
-<script>
-  (function () {
+        .related-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            padding: 14px 16px;
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            background: var(--card-bg);
+            text-decoration: none;
+            color: inherit;
+            transition: transform .2s, border-color .2s, background-color .2s;
+        }
+
+        .related-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-line);
+            background: var(--card-bg-hover);
+        }
+
+        .related-card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .related-card-desc {
+            font-size: 11.5px;
+            color: var(--text-faint);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media (max-width: 720px) {
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script>
+        (function () {
     var btn = document.getElementById('themeToggle');
     if (!btn) return;
     btn.addEventListener('click', function () {
@@ -175,18 +288,19 @@
       try { localStorage.setItem('qx-theme', next); } catch (e) {}
     });
   })();
-</script>
+    </script>
 
-<!-- 百度统计 -->
-<script>
-var _hmt = _hmt || [];
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?edfc3c91ef0069bdd3633cd46538a3d0";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script>
+    </script>
 
 </body>
+
 </html>

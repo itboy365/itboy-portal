@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 防闪白：必须在 CSS 之前 -->
-<script>
-  (function () {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 防闪白：必须在 CSS 之前 -->
+    <script>
+        (function () {
     try {
       var saved = localStorage.getItem('qx-theme');
       if (saved) {
@@ -16,57 +17,54 @@
       }
     } catch (e) {}
   })();
-</script>
+    </script>
 
-<title>AI 资讯快报 · iTboy</title>
-<meta name="description" content="人工智能领域每日动态">
-<meta name="theme-color" content="#0a0d12">
+    <title>AI 资讯快报 - 人工智能领域每日动态 - iTboy</title>
+    <meta name="description" content="人工智能领域每日动态">
+    <meta name="theme-color" content="#0a0d12">
 
-<style>
-  :root { --accent: #5b7cfa; }
-</style>
-<link rel="stylesheet" href="/assets/base.css">
+    <!-- SEO: Canonical 统一权威链接 -->
+    <link rel="canonical" href="https://www.itboy.top/ai-news/">
+
+    <!-- SEO: Open Graph (OG) 社交分享标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="iTboy">
+    <meta property="og:title" content="AI 资讯快报 - 人工智能领域每日动态 - iTboy">
+    <meta property="og:description" content="人工智能领域每日动态">
+    <meta property="og:url"
+        content="https://www.itboy.top/ai-news/">
+    <meta property="og:image" content="https://www.itboy.top/assets/daily-card.svg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        :root {
+            --accent: {
+                    {
+                    accent
+                }
+            }
+
+            ;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/base.css">
 
 <script type="application/ld+json">
-{
+    {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "AI 资讯快报",
   "description": "人工智能领域每日动态",
   "url": "https://www.itboy.top/ai-news/",
   "inLanguage": "zh-CN",
-  "numberOfItems": 4,
+  "numberOfItems": 0,
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "可灵 AI 模型 Kling 4.0 全量上线"
-,
-      "url": "https://mp.weixin.qq.com/s/Dn2jAxV0m6kpt7y4edRvdg"
-    },    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Black Forest Labs 开源 AI 图像模型 FLUX 3 Image Klein"
-,
-      "url": "https://bfl.ai/models/flux-3-image-klein"
-    },    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Meta 开源多模态大模型 Muse Spark Open"
-,
-      "url": "https://mp.weixin.qq.com/s/KqoOmBDsYqdhXB4BLvPPBA"
-    },    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "OpenAI 推出 ChatGPT 新一代语音模型 GPT-Live-1.1"
-,
-      "url": "https://ai-bot.cn/gpt-live-1-1/"
-    }  ]
+  ]
 }
 </script>
 
-<script type="application/ld+json">
-{
+    <script type="application/ld+json">
+        {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -82,29 +80,29 @@
       "item": "https://www.itboy.top/ai-news/"
     }  ]
 }
-</script>
+    </script>
 
 </head>
 
 <body>
-<div class="page">
+    <div class="page">
 
-  <!-- ===== 顶栏 ===== -->
-  <header class="topbar">
-    <a class="brand" href="/">
-      <span class="brand-name">iTboy</span>
-    </a>
+        <!-- ===== 顶栏 ===== -->
+        <header class="topbar">
+            <a class="brand" href="/">
+                <span class="brand-name">iTboy</span>
+            </a>
 
-    <div class="topbar-right">
-      <a class="back-btn" href="/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 12H5M12 19l-7-7 7-7"/>
-        </svg>
-        <span>返回首页</span>
-      </a>
+            <div class="topbar-right">
+                <a class="back-btn" href="/">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    <span>返回首页</span>
+                </a>
 
-      <button class="theme-toggle" id="themeToggle"
+                <button class="theme-toggle" id="themeToggle"
               aria-label="切换深浅色主题" title="切换主题">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -116,113 +114,142 @@
           <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
         </svg>
       </button>
-    </div>
-  </header>
+            </div>
+        </header>
 
-  <div class="hairline"></div>
+        <div class="hairline"></div>
 
-  <!-- ===== 主体 ===== -->
-  <main>
+        <!-- ===== 主体 ===== -->
+        <main>
 
-    <nav class="breadcrumb" aria-label="面包屑导航">
-          <a href="/">首页</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <span class="breadcrumb-current" aria-current="page">AI 资讯快报</span>
-    </nav>
+            <nav class="breadcrumb" aria-label="面包屑导航">
+                <a href="/">首页</a>
+                <span class="breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="breadcrumb-current" aria-current="page">AI 资讯快报</span>
+            </nav>
 
 
 <div class="page-head">
-  <h1 class="page-title">AI 资讯快报</h1>
-  <p class="page-desc">人工智能领域每日动态</p>
-  <p class="page-meta">2026-10-16 · 共 4 条</p>
+    <h1 class="page-title">AI 资讯快报</h1>
+    <p class="page-desc">人工智能领域每日动态</p>
+    <p class="page-meta">2026-10-17 · 共 0 条</p>
 </div>
 
 <p class="page-intro">AI 资讯快报每日汇总人工智能与大模型领域的重要新闻，涵盖新模型发布、开源框架、行业动态、产品更新与研究进展。内容精选自主流 AI 媒体与官方渠道，适合关注人工智能行业趋势的读者每日一览。</p>
 
 
-<div class="feed">
-  <article class="feed-card">
-    <h2 class="feed-title">
-      <a href="https://mp.weixin.qq.com/s/Dn2jAxV0m6kpt7y4edRvdg" target="_blank" rel="noopener"
-         style="text-decoration:none;color:inherit;">
-        可灵 AI 模型 Kling 4.0 全量上线
-      </a>
-    </h2>
+<div class="empty">今日暂无重大 AI 资讯，稍后再来</div>
 
-    <p class="feed-text">可灵AI正式宣布在全量上线。此次升级带来多项重要更新：4K及1080p的10-bit HDR格式输出即将推出，大幅提升画质表现；创作页面同步全面升级，为创作者提供更灵活、更自由的创作体验；Kling 4.0能力正式接入MCP/CLI，拓展至更多创作场景；面向企业客户与开发者的API服务也将于近期开放。</p>
 
-    <div class="feed-meta">
-      <span class="feed-source">可灵AI</span>
-      <span>2026-10-16</span>
+
+            <div class="related-section">
+                <h3 class="related-title">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px;">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    探索更多内容
+                </h3>
+                <div class="related-grid">
+                    <a class="related-card" href="/lunar/">
+                        <span class="related-card-title">农历黄历</span>
+                        <span class="related-card-desc">宜忌 · 干支 · 生肖</span>
+                    </a>
+                    <a class="related-card" href="/hot/zhihu/">
+                        <span class="related-card-title">知乎话题榜</span>
+                        <span class="related-card-desc">今日高赞讨论</span>
+                    </a>
+                    <a class="related-card" href="/hot/weibo/">
+                        <span class="related-card-title">微博热搜</span>
+                        <span class="related-card-desc">全网最热话题</span>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- ===== 页脚 ===== -->
+        <footer class="footer">
+            <div class="footer-left">
+                <div>© 2026 iTboy · 保留所有权利</div>
+                <div>内容均来自互联网 · 仅供信息浏览参考</div>
+                <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener nofollow">iTboy</a></div>
+            </div>
+            <div class="footer-right">
+                <a href="/sitemap.xml">Sitemap</a> ·
+                <a href="/robots.txt">Robots</a>
+            </div>
+        </footer>
+
     </div>
-  </article>
-  <article class="feed-card">
-    <h2 class="feed-title">
-      <a href="https://bfl.ai/models/flux-3-image-klein" target="_blank" rel="noopener"
-         style="text-decoration:none;color:inherit;">
-        Black Forest Labs 开源 AI 图像模型 FLUX 3 Image Klein
-      </a>
-    </h2>
 
-    <p class="feed-text">Black Forest Labs开源图像模型，参数量56亿，可在单张消费级GPU上本地运行，依托跨图像、视频、音频模态的共享学习成果。模型集生成、编辑与多参考图能力于一身，支持通过边界框精确控制画面布局与局部修改，文字渲染与写实细节表现出色。</p>
+    <style>
+        /* ============================================================
+   相关推荐模块样式（内联在 base.html 中，自动全站生效）
+   ============================================================ */
+        .related-section {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px dashed var(--card-border);
+        }
 
-    <div class="feed-meta">
-      <span class="feed-source">bfl.ai</span>
-      <span>2026-10-16</span>
-    </div>
-  </article>
-  <article class="feed-card">
-    <h2 class="feed-title">
-      <a href="https://mp.weixin.qq.com/s/KqoOmBDsYqdhXB4BLvPPBA" target="_blank" rel="noopener"
-         style="text-decoration:none;color:inherit;">
-        Meta 开源多模态大模型 Muse Spark Open
-      </a>
-    </h2>
+        .related-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
 
-    <p class="feed-text">开源原生多模态模型，总参数量为8160亿、420亿活跃，混合专家架构、原生多模态、100万上下文，主打编码与智能体。Meta称其为“美国最强开放权重模型”，六项测试第一，但软件开发等仍落后于Kimi、千问、智谱等中国开源模型。</p>
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
 
-    <div class="feed-meta">
-      <span class="feed-source">财联社</span>
-      <span>2026-10-16</span>
-    </div>
-  </article>
-  <article class="feed-card">
-    <h2 class="feed-title">
-      <a href="https://ai-bot.cn/gpt-live-1-1/" target="_blank" rel="noopener"
-         style="text-decoration:none;color:inherit;">
-        OpenAI 推出 ChatGPT 新一代语音模型 GPT-Live-1.1
-      </a>
-    </h2>
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            padding: 14px 16px;
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            background: var(--card-bg);
+            text-decoration: none;
+            color: inherit;
+            transition: transform .2s, border-color .2s, background-color .2s;
+        }
 
-    <p class="feed-text">OpenAI推出新一代语音模型，轻量版 GPT-Live-1.1 Quip 接替mini。新模型延续全双工交互，新增法语、德语、印地语、日语、韩语、墨西哥西班牙语6种语音及英文Bubbie音色，口音更自然；搜索时用多样短提示语反馈进度。</p>
+        .related-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-line);
+            background: var(--card-bg-hover);
+        }
 
-    <div class="feed-meta">
-      <span class="feed-source">AI工具集</span>
-      <span>2026-10-16</span>
-    </div>
-  </article>
-</div>
+        .related-card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
 
+        .related-card-desc {
+            font-size: 11.5px;
+            color: var(--text-faint);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
-  </main>
+        @media (max-width: 720px) {
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 
-  <!-- ===== 页脚 ===== -->
-  <footer class="footer">
-    <div class="footer-left">
-      <div>© 2026 iTboy · 保留所有权利</div>
-      <div>内容均来自互联网 · 仅供信息浏览参考</div>
-      <div>Powered by <a href="https://itboy.top" target="_blank" rel="noopener">iTboy</a></div>
-    </div>
-    <div class="footer-right">
-      <a href="/sitemap.xml">Sitemap</a> ·
-      <a href="/robots.txt">Robots</a>
-    </div>
-  </footer>
-
-</div>
-
-<script>
-  (function () {
+    <script>
+        (function () {
     var btn = document.getElementById('themeToggle');
     if (!btn) return;
     btn.addEventListener('click', function () {
@@ -232,18 +259,19 @@
       try { localStorage.setItem('qx-theme', next); } catch (e) {}
     });
   })();
-</script>
+    </script>
 
-<!-- 百度统计 -->
-<script>
-var _hmt = _hmt || [];
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?edfc3c91ef0069bdd3633cd46538a3d0";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script>
+    </script>
 
 </body>
+
 </html>
