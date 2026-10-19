@@ -37,10 +37,10 @@
 
   <!-- 日期 -->
   <text x="40" y="130" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="38"
-        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-10-18</text>
+        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-10-19</text>
 
   <text x="40" y="162" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#8b949e" letter-spacing="0.5">星期日 · 丙午年九月初九</text>
+        fill="#8b949e" letter-spacing="0.5">星期一 · 丙午年九月初十</text>
 
   <!-- 分隔线 1 -->
   <line x1="40" y1="195" x2="760" y2="195"
@@ -53,14 +53,14 @@
         fill="#5a636e" letter-spacing="1.5">本周摸鱼</text>
 
   <text x="40" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#5ec9b8">100<tspan font-size="22"
+        font-weight="700" fill="#5ec9b8">14<tspan font-size="22"
         opacity="0.7">%</tspan></text>
 
   <rect x="40" y="312" width="300" height="4" rx="2" fill="#1a2028"/>
-  <rect x="40" y="312" width="300" height="4" rx="2" fill="#00e0b8"/>
+  <rect x="40" y="312" width="42" height="4" rx="2" fill="#00e0b8"/>
 
   <text x="40" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">距离周末还有 6 天</text>
+        fill="#8b949e">距离周末还有 5 天</text>
 
   <!-- 金价 -->
   <text x="460" y="235" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12"
@@ -87,15 +87,15 @@
   <text x="40" y="465" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">壹</text>
   <text x="80" y="465" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">重阳节银发族开启错峰游：乘机出游量月环比增四成，“县城康养” 搜索热度同…</text>
+        fill="#e8edf2">中央气象台：冷空气接连影响我国，多地气温将创下半年来新低，局地降温超 1…</text>
   <text x="40" y="505" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">贰</text>
   <text x="80" y="505" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">猎户座流星雨将于 10 月 21 日至 22 日迎来极大：无需专业器材肉…</text>
+        fill="#e8edf2">生态环境部发布 10 月下半月全国空气质量预报会商结果：以优良为主</text>
   <text x="40" y="545" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">叁</text>
   <text x="80" y="545" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">11 月 1 日起社保缴费有新变化，用人单位欠缴社保最高可处以三倍罚款，…</text>
+        fill="#e8edf2">国铁集团：今年前三季度全国铁路发送旅客 37.1 亿人次，同比增长 4.…</text>
 
   <!-- 网址 -->
   <text x="760" y="588" text-anchor="end"
