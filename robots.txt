@@ -1,4 +1,25 @@
+# ==========================================
+# iTboy 门户 - 每日信息聚合 (www.itboy.top)
+# 策略：全量放行搜索引擎，禁止纯AI训练，允许AI搜索
+# ==========================================
+
 User-agent: *
+Allow: /
+
+# 禁止纯模型训练爬虫
+User-agent: GPTBot
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+
+# 允许带链接导流的 AI 搜索爬虫
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://www.itboy.top/sitemap.xml
