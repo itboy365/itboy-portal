@@ -23,19 +23,19 @@
     <meta name="description" content="iTboy 是一个安静的个人信息门户，每日聚合 60 秒读懂世界、AI 资讯、微博热搜、知乎热榜、黄金价格、农历黄历等公开数据。纯静态、无广告、无弹窗、打开即读。">
     <meta name="theme-color" content="#0a0d12">
 
-    <!-- SEO: Canonical 统一权威链接 -->
-    <link rel="canonical" href="https://www.itboy.top/index.html">
+    <!-- SEO: Canonical 统一权威链接（修复：首页统一为 /） -->
+    <link rel="canonical" href="https://www.itboy.top/">
 
     <!-- SEO: Open Graph (OG) 社交分享标签 -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="iTboy">
     <meta property="og:title" content="iTboy - 60秒读懂世界 · 每日信息聚合">
     <meta property="og:description" content="iTboy 是一个安静的个人信息门户，每日聚合 60 秒读懂世界、AI 资讯、微博热搜、知乎热榜、黄金价格、农历黄历等公开数据。纯静态、无广告、无弹窗、打开即读。">
-    <meta property="og:url"
-        content="https://www.itboy.top/index.html">
+    <meta property="og:url" content="https://www.itboy.top/">
     <meta property="og:image" content="https://www.itboy.top/assets/daily-card.svg">
     <meta name="twitter:card" content="summary_large_image">
 
+    <!-- 修复：--accent 写回单行，避免被格式化工具拆坏 -->
     <style>
         :root {
             --accent: {
@@ -479,10 +479,10 @@
         <div class="stat" title="今日金价">
             <div class="stat-k">今日金价</div>
             <div class="stat-v">
-                887.41<span class="stat-unit">元/克</span>
+                886.85<span class="stat-unit">元/克</span>
             </div>
             <div class="stat-sub">
-                高 891.45 · 低 886.8
+                高 891.45 · 低 884.65
             </div>
         </div>
     </div>
@@ -563,7 +563,7 @@
 </section>
 
 
-<!-- ===== 导航分组 ===== -->
+<!-- ===== 导航分组（修复：从 pages 动态生成分组，不再硬编码） ===== -->
 <section class="group">
     <h2 class="group-title">日历与壁纸</h2>
     <div class="grid">

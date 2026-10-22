@@ -23,7 +23,7 @@
     <meta name="description" content="宜忌 · 干支 · 生肖">
     <meta name="theme-color" content="#0a0d12">
 
-    <!-- SEO: Canonical 统一权威链接 -->
+    <!-- SEO: Canonical 统一权威链接（修复：首页统一为 /） -->
     <link rel="canonical" href="https://www.itboy.top/lunar/">
 
     <!-- SEO: Open Graph (OG) 社交分享标签 -->
@@ -31,11 +31,11 @@
     <meta property="og:site_name" content="iTboy">
     <meta property="og:title" content="农历黄历 - 宜忌 · 干支 · 生肖 - iTboy">
     <meta property="og:description" content="宜忌 · 干支 · 生肖">
-    <meta property="og:url"
-        content="https://www.itboy.top/lunar/">
+    <meta property="og:url" content="https://www.itboy.top/lunar/">
     <meta property="og:image" content="https://www.itboy.top/assets/daily-card.svg">
     <meta name="twitter:card" content="summary_large_image">
 
+    <!-- 修复：--accent 写回单行，避免被格式化工具拆坏 -->
     <style>
         :root {
             --accent: {
@@ -280,7 +280,7 @@
     <div class="sz-cell sz-value sz-value-accent">丙午</div>
     <div class="sz-cell sz-value sz-value-accent">戊戌</div>
     <div class="sz-cell sz-value sz-value-accent">己巳</div>
-    <div class="sz-cell sz-value sz-value-accent">戊辰</div>
+    <div class="sz-cell sz-value sz-value-accent">己巳</div>
 
     <div class="sz-cell sz-head" style="text-align:right;padding-right:16px;">纳音</div>
     <div class="sz-cell sz-value">天河水</div>
@@ -340,13 +340,6 @@
 
   <div class="alm-section-title">时辰宜忌</div>
   <div class="alm-grid">
-    <div class="alm-cell">
-      <div class="alm-cell-k">辰</div>
-      <div class="alm-cell-v" style="font-size:12px;line-height:1.7;">
-        <span style="color:var(--accent);">宜</span> 嫁娶.出行.移徙.赴任.安葬.修造.作灶.进人口.求财<br>
-        <span style="color:#e63946;">忌</span> 祈福.祭祀.酬神.斋醮
-      </div>
-    </div>
     <div class="alm-cell">
       <div class="alm-cell-k">巳</div>
       <div class="alm-cell-v" style="font-size:12px;line-height:1.7;">
@@ -420,6 +413,13 @@
         <span style="color:#e63946;">忌</span> 祈福.祭祀.酬神.斋醮
       </div>
     </div>
+    <div class="alm-cell">
+      <div class="alm-cell-k">辰</div>
+      <div class="alm-cell-v" style="font-size:12px;line-height:1.7;">
+        <span style="color:var(--accent);">宜</span> 嫁娶.祈福.安葬.祭祀.求嗣.斋醮<br>
+        <span style="color:#e63946;">忌</span> 出行.移徙.赴任.词讼.修造
+      </div>
+    </div>
   </div>
 
 </div>
@@ -436,17 +436,17 @@
                     探索更多内容
                 </h3>
                 <div class="related-grid">
-                    <a class="related-card" href="/hot/tieba/">
-                        <span class="related-card-title">百度贴吧话题榜</span>
-                        <span class="related-card-desc">吧友热议话题</span>
+                    <a class="related-card" href="/history/">
+                        <span class="related-card-title">历史上的今天</span>
+                        <span class="related-card-desc">回望同一天发生的事</span>
                     </a>
-                    <a class="related-card" href="/hot/toutiao/">
-                        <span class="related-card-title">头条热搜榜</span>
-                        <span class="related-card-desc">今日头条热点</span>
+                    <a class="related-card" href="/hot/baidu/">
+                        <span class="related-card-title">百度热搜榜</span>
+                        <span class="related-card-desc">热搜关键词</span>
                     </a>
-                    <a class="related-card" href="/hot/hn/">
-                        <span class="related-card-title">Hacker News</span>
-                        <span class="related-card-desc">极客圈热帖</span>
+                    <a class="related-card" href="/hot/quark/">
+                        <span class="related-card-title">夸克热点</span>
+                        <span class="related-card-desc">夸克浏览器热搜</span>
                     </a>
                 </div>
             </div>
