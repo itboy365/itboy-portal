@@ -67,7 +67,7 @@
         fill="#5a636e" letter-spacing="1.5">今日金价</text>
 
   <text x="460" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#c9a961">865.44<tspan
+        font-weight="700" fill="#c9a961">867.1<tspan
         font-size="16" opacity="0.7"> 元/克</tspan></text>
 
   <text x="460" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
