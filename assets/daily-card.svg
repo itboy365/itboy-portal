@@ -37,10 +37,10 @@
 
   <!-- 日期 -->
   <text x="40" y="130" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="38"
-        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-10-25</text>
+        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-10-26</text>
 
   <text x="40" y="162" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#8b949e" letter-spacing="0.5">星期日 · 丙午年九月十六</text>
+        fill="#8b949e" letter-spacing="0.5">星期一 · 丙午年九月十七</text>
 
   <!-- 分隔线 1 -->
   <line x1="40" y1="195" x2="760" y2="195"
@@ -53,25 +53,25 @@
         fill="#5a636e" letter-spacing="1.5">本周摸鱼</text>
 
   <text x="40" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#5ec9b8">100<tspan font-size="22"
+        font-weight="700" fill="#5ec9b8">14<tspan font-size="22"
         opacity="0.7">%</tspan></text>
 
   <rect x="40" y="312" width="300" height="4" rx="2" fill="#1a2028"/>
-  <rect x="40" y="312" width="300" height="4" rx="2" fill="#00e0b8"/>
+  <rect x="40" y="312" width="42" height="4" rx="2" fill="#00e0b8"/>
 
   <text x="40" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">距离周末还有 6 天</text>
+        fill="#8b949e">距离周末还有 5 天</text>
 
   <!-- 金价 -->
   <text x="460" y="235" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12"
         fill="#5a636e" letter-spacing="1.5">今日金价</text>
 
   <text x="460" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#c9a961">863<tspan
+        font-weight="700" fill="#c9a961">862.78<tspan
         font-size="16" opacity="0.7"> 元/克</tspan></text>
 
   <text x="460" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">高 863.01 · 低 863</text>
+        fill="#8b949e">高 864.33 · 低 861.1</text>
 
   <!-- 分隔线 2 -->
   <line x1="40" y1="388" x2="760" y2="388"
@@ -87,15 +87,15 @@
   <text x="40" y="465" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">壹</text>
   <text x="80" y="465" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">2027 年国考报名结束：已有 300 余万人过审，最热岗位 5840:…</text>
+        fill="#e8edf2">于蕾出任 2027 羊年央视春晚总导演，连续第五年执导春晚</text>
   <text x="40" y="505" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">贰</text>
   <text x="80" y="505" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">2025 年全国结婚数据公布：共 676.51 万对，初婚人数 1042…</text>
+        fill="#e8edf2">亚洲最长地铁环线武汉 12 号线即将全线开通：没有传统终点站，坐一圈 9…</text>
   <text x="40" y="545" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">叁</text>
   <text x="80" y="545" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">中行定于 2026 年 10 月 30 日发行 2027 版熊猫贵金属纪…</text>
+        fill="#e8edf2">31 省份去年平均工资出炉：全国城镇非私营单位年平均工资为 129441…</text>
 
   <!-- 网址 -->
   <text x="760" y="588" text-anchor="end"
