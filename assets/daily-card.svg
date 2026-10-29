@@ -37,10 +37,10 @@
 
   <!-- 日期 -->
   <text x="40" y="130" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="38"
-        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-10-28</text>
+        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-10-29</text>
 
   <text x="40" y="162" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#8b949e" letter-spacing="0.5">星期三 · 丙午年九月十九</text>
+        fill="#8b949e" letter-spacing="0.5">星期四 · 丙午年九月二十</text>
 
   <!-- 分隔线 1 -->
   <line x1="40" y1="195" x2="760" y2="195"
@@ -53,25 +53,25 @@
         fill="#5a636e" letter-spacing="1.5">本周摸鱼</text>
 
   <text x="40" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#5ec9b8">43<tspan font-size="22"
+        font-weight="700" fill="#5ec9b8">57<tspan font-size="22"
         opacity="0.7">%</tspan></text>
 
   <rect x="40" y="312" width="300" height="4" rx="2" fill="#1a2028"/>
-  <rect x="40" y="312" width="129" height="4" rx="2" fill="#00e0b8"/>
+  <rect x="40" y="312" width="171" height="4" rx="2" fill="#00e0b8"/>
 
   <text x="40" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">距离周末还有 3 天</text>
+        fill="#8b949e">距离周末还有 2 天</text>
 
   <!-- 金价 -->
   <text x="460" y="235" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12"
         fill="#5a636e" letter-spacing="1.5">今日金价</text>
 
   <text x="460" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#c9a961">219.1<tspan
+        font-weight="700" fill="#c9a961">218.3<tspan
         font-size="16" opacity="0.7"> 元/克</tspan></text>
 
   <text x="460" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">高 220.6 · 低 223.9</text>
+        fill="#8b949e">高 219.8 · 低 220.1</text>
 
   <!-- 分隔线 2 -->
   <line x1="40" y1="388" x2="760" y2="388"
@@ -87,15 +87,15 @@
   <text x="40" y="465" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">壹</text>
   <text x="80" y="465" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">2026 胡润百富榜出炉：张一鸣身家 6700 亿创新高再成中国首富，钟…</text>
+        fill="#e8edf2">31 省经济 “三季报” 全部出炉：广东、江苏 GDP 超 10 万亿元…</text>
   <text x="40" y="505" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">贰</text>
   <text x="80" y="505" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">统计局：前 9 个月全国规模以上工业企业利润增长 15.5%，电子行业利…</text>
+        fill="#e8edf2">商务部：今年以来消费品以旧换新带动销售额超 2 万亿元，惠及超 2.5…</text>
   <text x="40" y="545" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">叁</text>
   <text x="80" y="545" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">我国风光累计装机容量突破 20 亿千瓦，约占全球新能源总装机的一半</text>
+        fill="#e8edf2">央行报告：三季度末个人住房贷款余额 35.91 万亿元，同比下降 4.1…</text>
 
   <!-- 网址 -->
   <text x="760" y="588" text-anchor="end"
