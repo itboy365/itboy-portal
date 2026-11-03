@@ -37,10 +37,10 @@
 
   <!-- 日期 -->
   <text x="40" y="130" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="38"
-        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-11-02</text>
+        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-11-03</text>
 
   <text x="40" y="162" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#8b949e" letter-spacing="0.5">星期一 · 丙午年九月廿四</text>
+        fill="#8b949e" letter-spacing="0.5">星期二 · 丙午年九月廿五</text>
 
   <!-- 分隔线 1 -->
   <line x1="40" y1="195" x2="760" y2="195"
@@ -53,25 +53,25 @@
         fill="#5a636e" letter-spacing="1.5">本周摸鱼</text>
 
   <text x="40" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#5ec9b8">14<tspan font-size="22"
+        font-weight="700" fill="#5ec9b8">29<tspan font-size="22"
         opacity="0.7">%</tspan></text>
 
   <rect x="40" y="312" width="300" height="4" rx="2" fill="#1a2028"/>
-  <rect x="40" y="312" width="42" height="4" rx="2" fill="#00e0b8"/>
+  <rect x="40" y="312" width="87" height="4" rx="2" fill="#00e0b8"/>
 
   <text x="40" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">距离周末还有 5 天</text>
+        fill="#8b949e">距离周末还有 4 天</text>
 
   <!-- 金价 -->
   <text x="460" y="235" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12"
         fill="#5a636e" letter-spacing="1.5">今日金价</text>
 
   <text x="460" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#c9a961">836.55<tspan
+        font-weight="700" fill="#c9a961">847.69<tspan
         font-size="16" opacity="0.7"> 元/克</tspan></text>
 
   <text x="460" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">高 841.72 · 低 832.95</text>
+        fill="#8b949e">高 847.98 · 低 846.63</text>
 
   <!-- 分隔线 2 -->
   <line x1="40" y1="388" x2="760" y2="388"
@@ -87,15 +87,15 @@
   <text x="40" y="465" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">壹</text>
   <text x="80" y="465" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">2027 年春节有望连休 9 天：除夕 2 月 5 日恰逢周五，顺连周末…</text>
+        fill="#e8edf2">贴息新政激活楼市 “银十”：18 城二手房成交 11.6 万套，同比增长…</text>
   <text x="40" y="505" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">贰</text>
   <text x="80" y="505" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">前 10 个月百强房企销售总额超 2.5 万亿元，65 家房企单月销售额…</text>
+        fill="#e8edf2">医保局：今年前 9 个月生育津贴支出超 781 亿元，全面实现直发个人</text>
   <text x="40" y="545" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">叁</text>
   <text x="80" y="545" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">上海 10 月二手住房成交量 2.23 万套，同比增加 34%，创近 6…</text>
+        fill="#e8edf2">我国拟修改税收征收管理法，将稳慎加强对个人的税收征管</text>
 
   <!-- 网址 -->
   <text x="760" y="588" text-anchor="end"
