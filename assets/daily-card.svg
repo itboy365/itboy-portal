@@ -37,10 +37,10 @@
 
   <!-- 日期 -->
   <text x="40" y="130" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="38"
-        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-11-03</text>
+        font-weight="700" fill="#e8edf2" letter-spacing="1">2026-11-04</text>
 
   <text x="40" y="162" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#8b949e" letter-spacing="0.5">星期二 · 丙午年九月廿六</text>
+        fill="#8b949e" letter-spacing="0.5">星期三 · 丙午年九月廿六</text>
 
   <!-- 分隔线 1 -->
   <line x1="40" y1="195" x2="760" y2="195"
@@ -67,11 +67,11 @@
         fill="#5a636e" letter-spacing="1.5">今日金价</text>
 
   <text x="460" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="46"
-        font-weight="700" fill="#c9a961">846.24<tspan
+        font-weight="700" fill="#c9a961">847.17<tspan
         font-size="16" opacity="0.7"> 元/克</tspan></text>
 
   <text x="460" y="348" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13"
-        fill="#8b949e">高 846.66 · 低 843.92</text>
+        fill="#8b949e">高 851.74 · 低 842.15</text>
 
   <!-- 分隔线 2 -->
   <line x1="40" y1="388" x2="760" y2="388"
@@ -87,15 +87,15 @@
   <text x="40" y="465" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">壹</text>
   <text x="80" y="465" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">贴息新政激活楼市 “银十”：18 城二手房成交 11.6 万套，同比增长…</text>
+        fill="#e8edf2">中国气象局确认：最强厄尔尼诺将明显影响我国，预计今冬全国气温总体偏高，呈…</text>
   <text x="40" y="505" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">贰</text>
   <text x="80" y="505" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">医保局：今年前 9 个月生育津贴支出超 781 亿元，全面实现直发个人</text>
+        fill="#e8edf2">央行宣布 11 月 15 日起上调金融机构外汇存款准备金率，由现行的 4…</text>
   <text x="40" y="545" font-family="STSong, SimSun, Songti SC, Noto Serif SC, serif" font-size="20"
         fill="#5ec9b8" opacity="0.55">叁</text>
   <text x="80" y="545" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14"
-        fill="#e8edf2">我国拟修改税收征收管理法，将稳慎加强对个人的税收征管</text>
+        fill="#e8edf2">A 股融资余额降至 2.30 万亿元，创出 2025 年 9 月以来逾一…</text>
 
   <!-- 网址 -->
   <text x="760" y="588" text-anchor="end"
