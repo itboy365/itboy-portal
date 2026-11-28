@@ -35,19 +35,15 @@
     <meta property="og:image" content="https://www.itboy.top/assets/daily-card.svg">
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- 修复：--accent 写回单行，避免被格式化工具拆坏 -->
-    <style>
-        :root {
-            --accent: {
-                    {
-                    accent
-                }
-            }
+    <!-- 全站样式表 -->
+    <link rel="stylesheet" href="/assets/base.css">
 
-            ;
+    <style>
+        :root,
+        :root[data-theme="dark"] {
+            --accent: #6ecfbf;
         }
     </style>
-    <link rel="stylesheet" href="/assets/base.css">
 
     <script type="application/ld+json">
         {
